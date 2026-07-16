@@ -1,4 +1,4 @@
-# RAG 應用程式 (Retrieval-Augmented Generation)
+# 《MedHop GraphRAG: Building a Biomedical Multi-hop Question Answering System》V1.0
 
 這是一個使用 **Python, LangChain, Streamlit, ChromaDB 與 OpenAI** 撰寫的本地端文件問答系統。它可以讀取 PDF 與文字檔入庫，透過向量檢索尋找相關內容，再交給 LLM 總結成自然流暢的回答。
 
