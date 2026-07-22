@@ -1,0 +1,3368 @@
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d0" for="edge" attr.name="weight" attr.type="double" />
+  <graph edgedefault="undirected">
+    <node id="DB00773" />
+    <node id="P01308" />
+    <node id="P51606" />
+    <node id="ROS" />
+    <node id="APOPTOSIS" />
+    <node id="AGES" />
+    <node id="P01308-1" />
+    <node id="HYPERGLYCEMIA" />
+    <node id="TADALAFIL" />
+    <node id="P21554" />
+    <node id="DB00820" />
+    <node id="TGF-BETA1" />
+    <node id="INDUCIBLE NITRIC OXIDE SYNTHASE" />
+    <node id="XANTHINE OXIDOREDUCTASE" />
+    <node id="CVOD" />
+    <node id="CN DAMAGE" />
+    <node id="P37840" />
+    <node id="PARKINSON'S DISEASE" />
+    <node id="Q9BXM7" />
+    <node id="A30P" />
+    <node id="PD" />
+    <node id="Q05940" />
+    <node id="DOPAMINE" />
+    <node id="NIGROSTRIATAL" />
+    <node id="DB00588" />
+    <node id="ANNEXIN1" />
+    <node id="BETA2-INTEGRIN" />
+    <node id="FLUTICASONE PROPIONATE" />
+    <node id="EOSTAXIN" />
+    <node id="ANEXIN1" />
+    <node id="FP" />
+    <node id="P47712" />
+    <node id="RAS-MAPK" />
+    <node id="JAK-STAT" />
+    <node id="WNT" />
+    <node id="P35610" />
+    <node id="CAVEOLAE" />
+    <node id="P06702" />
+    <node id="P05109" />
+    <node id="P05231" />
+    <node id="P42224" />
+    <node id="Q00978" />
+    <node id="Q13651" />
+    <node id="CAV-1" />
+    <node id="SMC" />
+    <node id="P35367" />
+    <node id="P01375" />
+    <node id="NF-&#922;B" />
+    <node id="KETOTIFEN" />
+    <node id="C-REL" />
+    <node id="NF-&#312;B" />
+    <node id="DB00281" />
+    <node id="GBR12909" />
+    <node id="NAC" />
+    <node id="Q01959" />
+    <node id="TETRABENAZINE" />
+    <node id="DB04844" />
+    <node id="P04626" />
+    <node id="P42336" />
+    <node id="P60484" />
+    <node id="TRASTUZUMAB" />
+    <node id="P17936" />
+    <node id="P15692" />
+    <node id="ASTHMA" />
+    <node id="P05019" />
+    <node id="PHOSPHATIDYLINOSITOL_3_KINASE_PATHWAY" />
+    <node id="P05112" />
+    <node id="P05113" />
+    <node id="P35225" />
+    <node id="DB00107" />
+    <node id="ANDROGENETIC ALOPEA" />
+    <node id="AR" />
+    <node id="P16104" />
+    <node id="P13500" />
+    <node id="Q8NE62" />
+    <node id="P29474" />
+    <node id="&#914;-SGC" />
+    <node id="TADALI" />
+    <node id="P63165" />
+    <node id="Q06609" />
+    <node id="DB00184" />
+    <node id="NSCLC" />
+    <node id="BREAST_CANCER" />
+    <node id="NICOTINE" />
+    <node id="P12830" />
+    <node id="VIMENTIN" />
+    <node id="FIBRONECTIN" />
+    <node id="NO" />
+    <node id="P11388" />
+    <node id="GSNO" />
+    <node id="P35228" />
+    <node id="TOP2&#914;CC" />
+    <node id="P10275" />
+    <node id="DB02901" />
+    <node id="DB05812" />
+    <node id="ENZALUTAMIDE" />
+    <node id="CYP17A" />
+    <node id="MCRPC" />
+    <node id="P50750-700" />
+    <node id="ARN-509" />
+    <node id="GALETERONE" />
+    <node id="P38398" />
+    <node id="BREAST_CARCINOMA" />
+    <node id="LOH" />
+    <node id="DNA_REPAIR_PATHWAY" />
+    <node id="Q00987" />
+    <node id="P12956" />
+    <node id="AKT" />
+    <node id="P53" />
+    <node id="BAX" />
+    <node id="MITOMYCIN C" />
+    <node id="RADIAL FORMATION" />
+    <node id="P43351" />
+    <node id="P49917" />
+    <node id="P49959" />
+    <node id="DB02546" />
+    <node id="FLIP" />
+    <node id="MITOXANTRONE" />
+    <node id="HIF-1&#913;" />
+    <node id="INTERSTRAND CROSSLINK" />
+    <node id="TRANSLATION" />
+    <node id="SOLID TUMOR" />
+    <node id="SR141716A" />
+    <node id="P09341" />
+    <node id="P13501" />
+    <node id="P10147" />
+    <node id="DB00072" />
+    <node id="CB2" />
+    <node id="NCI-N87" />
+    <node id="CETIRIZINE" />
+    <node id="GUGGULSTERONE" />
+    <node id="P40763" />
+    <node id="P27540" />
+    <node id="ANGIOGENESIS" />
+    <node id="COLON CANCER" />
+    <node id="COLON_CANCER" />
+    <node id="SBMA" />
+    <node id="CBP" />
+    <node id="8-OXODG" />
+    <node id="Q13315" />
+    <node id="8-NITROGUANINE" />
+    <node id="P00533" />
+    <node id="E(2)" />
+    <node id="LUNG_ADENOCARCINOMA" />
+    <node id="P06401" />
+    <node id="Q15648" />
+    <node id="THSG" />
+    <node id="SA_BETA_GAL" />
+    <node id="SHR" />
+    <node id="SA-&#914;-GAL" />
+    <node id="P16" />
+    <node id="Q96EB6" />
+    <node id="P18621" />
+    <node id="Q9Y6W8" />
+    <node id="P10747" />
+    <node id="P60568" />
+    <node id="P13232" />
+    <node id="P42229" />
+    <node id="O75030" />
+    <node id="HUBC9" />
+    <node id="DB00133" />
+    <node id="K201" />
+    <node id="S73A" />
+    <node id="MG132" />
+    <node id="K201R" />
+    <node id="P08235" />
+    <node id="GLU" />
+    <node id="PP" />
+    <node id="T1DM" />
+    <node id="HMA" />
+    <node id="Q9UBN7" />
+    <node id="TUBACIN" />
+    <node id="ETOPOSIDE" />
+    <node id="DOXORUBICIN" />
+    <node id="P35638" />
+    <node id="CHK2" />
+    <node id="BICALUTAMIDE" />
+    <node id="LNCAP-O43633" />
+    <node id="DB00624" />
+    <node id="DB01128" />
+    <node id="PSA" />
+    <node id="ACIDIC_PH" />
+    <node id="ATR" />
+    <node id="DMBA" />
+    <node id="DB00290" />
+    <node id="DB00338" />
+    <node id="Q04656" />
+    <node id="P20648" />
+    <node id="BLEOMYCIN" />
+    <node id="DSBS" />
+    <node id="SASP" />
+    <node id="P08253" />
+    <node id="P14780" />
+    <node id="TYROSINASE" />
+    <node id="OMEPRAZOLE" />
+    <node id="ENDOH" />
+    <node id="O76074" />
+    <node id="Q9Y275" />
+    <node id="AICD" />
+    <node id="PUMA" />
+    <node id="BID" />
+    <node id="BCL2" />
+    <node id="CDA" />
+    <node id="HUMAN" />
+    <node id="MICE" />
+    <node id="MIFEPRISTONE" />
+    <node id="DB00294" />
+    <node id="P17813" />
+    <node id="KI67" />
+    <node id="Q9Y6X2" />
+    <node id="MELANOCYTES" />
+    <node id="MAST CELLS" />
+    <node id="MICROPHTHALMIA TRANSCRIPTION FACTOR" />
+    <node id="RANTES" />
+    <node id="ATHEROSCLEROSIS" />
+    <node id="IL-1RA" />
+    <node id="MIP-1 ALPHA" />
+    <node id="MIP-1 BETA" />
+    <node id="Q16552" />
+    <node id="P01579" />
+    <node id="Q01196" />
+    <node id="AML" />
+    <node id="Q06455" />
+    <node id="HDAC" />
+    <node id="DB00313" />
+    <node id="Q92769" />
+    <node id="LIPID HOMEOSTASIS" />
+    <node id="Q13547" />
+    <node id="P08700" />
+    <node id="VEGF164" />
+    <node id="DB00169" />
+    <node id="DB00755" />
+    <node id="P11473" />
+    <node id="P10276" />
+    <node id="P10826" />
+    <node id="P13631" />
+    <node id="BREAST CANCER" />
+    <node id="ALPHA7-NACHRS" />
+    <node id="EMT" />
+    <node id="DB01109" />
+    <node id="P48061" />
+    <node id="P61073" />
+    <node id="DB06822" />
+    <node id="MDA-MB-231" />
+    <node id="TAC-101" />
+    <node id="AP-1" />
+    <node id="VASCULAR_ENDOTHELIAL_GROWTH_FACTOR" />
+    <node id="P53602" />
+    <node id="DLD-1" />
+    <node id="DB09079" />
+    <node id="PDAC" />
+    <node id="P17948" />
+    <node id="P11362" />
+    <node id="PDGFR&#913;/&#914;" />
+    <node id="PI3K" />
+    <node id="MAPK" />
+    <node id="NINTEDANIB" />
+    <node id="GEMCITABINE" />
+    <node id="DB00480" />
+    <node id="IL1B" />
+    <node id="IL6" />
+    <node id="IL12" />
+    <node id="GMCSF" />
+    <node id="P56270" />
+    <node id="KLF-4" />
+    <node id="HDAC-2" />
+    <node id="HDAC-3" />
+    <node id="DB04468" />
+    <node id="ADENOCARCINOMA" />
+    <node id="P56817" />
+    <node id="E2" />
+    <node id="P03372" />
+    <node id="MDA-MB-468" />
+    <node id="P21CIP-1" />
+    <node id="Q01094" />
+    <node id="P12004" />
+    <node id="ICL182780" />
+    <node id="-1" />
+    <node id="G0/P" />
+    <node id="DNA SYNTHESIS" />
+    <node id="DB00083" />
+    <node id="P21964" />
+    <node id="P20813" />
+    <node id="P35462" />
+    <node id="P05177" />
+    <node id="P08684" />
+    <node id="P60880" />
+    <node id="DB08918" />
+    <node id="VARIANT" />
+    <node id="X-RAY CRYSTAL STRUCTURE" />
+    <node id="BOTULISM" />
+    <node id="CLOSTRIDIUM BOTULINUM" />
+    <node id="NAP" />
+    <node id="BONT/EC" />
+    <node id="SNARE" />
+    <node id="4,7-ACQ" />
+    <node id="CQR" />
+    <node id="MEFLOQUINE" />
+    <node id="DB01593" />
+    <node id="SYNTAXIN" />
+    <node id="BONT/C1-LC" />
+    <node id="PERGOLIDE" />
+    <node id="P41595" />
+    <node id="DB01186" />
+    <node id="CABERGOLINE" />
+    <node id="DB01200" />
+    <node id="LISURIDE" />
+    <node id="TERGURIDE" />
+    <node id="GT1B" />
+    <node id="GD1A" />
+    <node id="GM1" />
+    <node id="NEURO2A" />
+    <node id="SKN-SH" />
+    <node id="B" />
+    <node id="VAMP/SYNAPTOBREVIN" />
+    <node id="TENT" />
+    <node id="BONT/B" />
+    <node id="BONT/F" />
+    <node id="BONT/E" />
+    <node id="BONT/C" />
+    <node id="SYNTAXIN 1" />
+    <node id="PLASMA MEMBRANE RECYCLING" />
+    <node id="ALC" />
+    <node id="Q99259" />
+    <node id="GABAERGIC" />
+    <node id="GLUTAMATERGIC" />
+    <node id="DB00118" />
+    <node id="DB00035" />
+    <node id="P30518" />
+    <node id="DB02527" />
+    <node id="SER1177" />
+    <node id="BONT/A" />
+    <node id="AB" />
+    <node id="BA" />
+    <node id="VAMP" />
+    <node id="ACH" />
+    <node id="NMJ" />
+    <node id="Q9Y5X9" />
+    <node id="NEUROTRANSMITTER RELEASE" />
+    <node id="DB00083 (RYM)" />
+    <node id="Q9ULX5" />
+    <node id="GFP" />
+    <node id="MASTOPARAN-7" />
+    <node id="DB00083_LC" />
+    <node id="MAS-7" />
+    <node id="PHOSPHOLIPASE_A2" />
+    <node id="8-HYDROXYQUINOLINE" />
+    <node id="HYDROXAMIC ACID" />
+    <node id="ZN-ENDOPROTEASE" />
+    <node id="DB00435" />
+    <node id="NF-KAPPAB" />
+    <node id="P25963" />
+    <node id="S25-R198T" />
+    <node id="DB00741" />
+    <node id="Q14790" />
+    <node id="P42574" />
+    <node id="P04150" />
+    <node id="P28845" />
+    <node id="MT" />
+    <node id="DB00951" />
+    <node id="MT-/-" />
+    <node id="MT+/+" />
+    <node id="P05181" />
+    <node id="RFP" />
+    <node id="ERALPHA" />
+    <node id="ERBETA" />
+    <node id="DB00947" />
+    <node id="MRNA DISPLAY" />
+    <node id="MOTOR IMPAIRMENT" />
+    <node id="BONT" />
+    <node id="P21397" />
+    <node id="ADHD" />
+    <node id="60880" />
+    <node id="P23763" />
+    <node id="P63027" />
+    <node id="DB00083 LC" />
+    <node id="FIREFLY LUCIFERASE" />
+    <node id="P00374" />
+    <node id="I48" />
+    <node id="M48" />
+    <node id="DIAPHRAGM" />
+    <node id="P29323" />
+    <node id="MDA-MD-435" />
+    <node id="P04818" />
+    <node id="TBE" />
+    <node id="DB00544" />
+    <node id="AG-331" />
+    <node id="DB00293" />
+    <node id="TS" />
+    <node id="NOLATREXED" />
+    <node id="RALTITREXED" />
+    <node id="METHOTREXATE" />
+    <node id="DB01629" />
+    <node id="DB00432" />
+    <node id="SV2" />
+    <node id="GM-P04141" />
+    <node id="CASPASE-6" />
+    <node id="LAMIN A/C" />
+    <node id="DB00083-LC" />
+    <node id="Z-VEID-FMK" />
+    <node id="DB00351" />
+    <node id="CSY" />
+    <node id="DB05232" />
+    <node id="RAT" />
+    <node id="IMMITIS" />
+    <node id="DIROFILARIA_IMMITIS" />
+    <node id="P13671" />
+    <node id="BORRELIA_BURGDORFERI_S_L" />
+    <node id="IDEXS_P60880" />
+    <node id="ANAPLASM_A_PHAGOCYTOPHILUM" />
+    <node id="P25054" />
+    <node id="DB00171" />
+    <node id="A/R" />
+    <node id="PKG" />
+    <node id="Q15631" />
+    <node id="KATP" />
+    <node id="DB00322" />
+    <node id="TS-BS" />
+    <node id="DB00515" />
+    <node id="DB09327" />
+    <node id="ANXIN1" />
+    <node id="NAPA" />
+    <node id="P46459" />
+    <node id="CELL_CYCLE" />
+    <node id="Q8NI35" />
+    <node id="VAMP7" />
+    <node id="Q14117" />
+    <node id="P23919" />
+    <node id="P33316" />
+    <node id="Q05932" />
+    <node id="Q92820" />
+    <node id="P15531" />
+    <node id="Q8TCD5" />
+    <node id="P23921" />
+    <node id="Q9BZX2" />
+    <node id="P13051" />
+    <node id="P11172" />
+    <node id="DB00368" />
+    <node id="G&#914;" />
+    <node id="G&#913;(I1/2)" />
+    <node id="NA" />
+    <node id="O75783" />
+    <node id="NAPS" />
+    <node id="DTT" />
+    <node id="SYNAPTOBREVIN" />
+    <node id="P60880-25E" />
+    <node id="SNARE_COMPLEX" />
+    <node id="P60880-25A" />
+    <node id="CS-BOTIM/B" />
+    <node id="PERIPHERAL NEUROPATHY" />
+    <node id="RAT TRACHEA" />
+    <node id="FORMALIN-INDUCED PAIN" />
+    <node id="COLCHICINE" />
+    <node id="TRIGEMINAL NUCLEUS CAUDALIS" />
+    <node id="BOTULINUM NEUROTOXIN" />
+    <node id="P11274" />
+    <node id="P00519" />
+    <node id="PHILADELPHIA_CHROMOSOME_POSITIVE_ADL" />
+    <node id="9;22_TRANSLOCATION" />
+    <node id="CA2+-REGULATED" />
+    <node id="C1" />
+    <node id="GH4C1" />
+    <node id="PROLACTIN" />
+    <node id="BOONT/A" />
+    <node id="DB00142" />
+    <node id="DB00120" />
+    <node id="DB00135" />
+    <node id="CDK5" />
+    <node id="P35" />
+    <node id="NEURONAL MIGRATION" />
+    <node id="ALZHEIMER'S DISEASE" />
+    <node id="ROSCOVITINE" />
+    <node id="P/Q-TYPE VDCC" />
+    <node id="L(II-III)" />
+    <node id="DB00989" />
+    <node id="LOAD" />
+    <node id="BUCHE" />
+    <node id="P22303" />
+    <node id="GASTROCNEMIUS" />
+    <node id="LONG-TERM PARALYSIS" />
+    <node id="SNAP-25" />
+    <node id="NOCIPEPTOR" />
+    <node id="P197" />
+    <node id="SYNAPTOTAGMIN" />
+    <node id="K_V2_1" />
+    <node id="CA_V1_2" />
+    <node id="METHYL_BETA_CYCLODEXTRIN" />
+    <node id="AU" />
+    <node id="CLOZAPINE" />
+    <node id="SREBP" />
+    <node id="HALOPERIDOL" />
+    <node id="ACAT2" />
+    <node id="SCD1" />
+    <node id="DB00083_L" />
+    <node id="ZN(2+)" />
+    <node id="DB00083_H" />
+    <node id="L_CHAIN" />
+    <node id="H_CHAIN" />
+    <node id="NEUROMUSCULAR_TRANSMISSION" />
+    <node id="ARG-ARG-GLY-CYS" />
+    <node id="BOBT" />
+    <node id="DTH" />
+    <node id="P01282" />
+    <node id="CASPASE8" />
+    <node id="Q09428" />
+    <node id="ERG" />
+    <node id="DB01067" />
+    <node id="RBONT/A LC" />
+    <node id="ESCHERICHIA COLI" />
+    <node id="MERCURIC COMPOUNDS" />
+    <node id="AE" />
+    <node id="SYNTAXIN 1A" />
+    <node id="SNAXIN1A" />
+    <node id="DB00619" />
+    <node id="CML" />
+    <node id="ER" />
+    <node id="STI571" />
+    <node id="SEPSC" />
+    <node id="MEPSC" />
+    <node id="CA2+" />
+    <node id="SR2+" />
+    <node id="GLUTAMATE" />
+    <node id="ESNS" />
+    <node id="GLUTAMATE RELEASE" />
+    <node id="RECOMBINANT P60880" />
+    <node id="FACTOR XA" />
+    <node id="Q8NER1" />
+    <node id="P80511" />
+    <node id="CGRP8-37" />
+    <node id="DB00083_AD" />
+    <node id="TGNS" />
+    <node id="NEUROMUSCULAR JUNCTION" />
+    <node id="DB05875" />
+    <node id="P25103" />
+    <node id="DB00083-LC:SP" />
+    <node id="DB01229" />
+    <node id="DB00083-G" />
+    <node id="CHRONIC PAIN" />
+    <node id="MONKEY" />
+    <node id="ALENDRONATE" />
+    <node id="FPPS" />
+    <node id="DB00630" />
+    <node id="OSTEOCLAST" />
+    <node id="OSTEOBLAST" />
+    <node id="G PROTEIN" />
+    <node id="FSCV" />
+    <node id="LC/A" />
+    <node id="CLOSTRIDIUM.BOTULINUM" />
+    <node id="EXOCYTOSIS" />
+    <node id="ANTIMITOTIC" />
+    <node id="ANTITUMOR" />
+    <node id="P60880(1-197)" />
+    <node id="Q8WZA2" />
+    <node id="Q9UQ26" />
+    <node id="TH" />
+    <node id="DB00783" />
+    <node id="P51617" />
+    <node id="IL-12 P40" />
+    <node id="LPS" />
+    <node id="TYPE A BOTULISM" />
+    <node id="IGY" />
+    <node id="MAB10F12" />
+    <node id="COLOBOMA" />
+    <node id="CM/+" />
+    <node id="NEUROMUSCULAR TRANSMISSION" />
+    <node id="SPINAL MOTOR NEURONS" />
+    <node id="TWITCH TENSION" />
+    <node id="TETANIC TENSION" />
+    <node id="MEPP AMPLITUDE" />
+    <node id="MEPP FREQUENCY" />
+    <node id="ACETAZOLAMIDE" />
+    <node id="SECRETIN" />
+    <node id="APOE/LDLR_KO" />
+    <node id="L-NAME" />
+    <node id="C57BL/6" />
+    <node id="MIR-146A" />
+    <node id="Q9Y4K3" />
+    <node id="DB06603" />
+    <node id="DB01171" />
+    <node id="P21917" />
+    <node id="P21918" />
+    <node id="P31645" />
+    <node id="P28222" />
+    <node id="DB06813" />
+    <node id="O75791" />
+    <node id="P41440" />
+    <node id="DB01045" />
+    <node id="PERIPHERAL_T_CELL_LYMPHOMA" />
+    <node id="SANGUINARINE" />
+    <node id="BLBC" />
+    <node id="PTCL" />
+    <node id="MTX" />
+    <node id="HDLP" />
+    <node id="HISTONE H3" />
+    <node id="Q01196-Q06455-Q13547" />
+    <node id="CHO" />
+    <node id="CG0031N14" />
+    <node id="DB11245" />
+    <node id="P35354" />
+    <node id="P09211" />
+    <node id="P07099" />
+    <node id="Q16678" />
+    <node id="P19224" />
+    <node id="NAT2" />
+    <node id="P09488" />
+    <node id="P30711" />
+    <node id="DB03823" />
+    <node id="P04406" />
+    <node id="P10620" />
+    <node id="HCAS" />
+    <node id="EGCG" />
+    <node id="BC" />
+    <node id="P42898" />
+    <node id="Q14116" />
+    <node id="CC-4047" />
+    <node id="DB00501" />
+    <node id="P25021" />
+    <node id="CIMETIDINE" />
+    <node id="IL18" />
+    <node id="FAMOTIDINE" />
+    <node id="ITIDINE" />
+    <node id="PKA" />
+    <node id="H89" />
+    <node id="PRALATREXATE" />
+    <node id="R/M HNSCC" />
+    <node id="HNSCC" />
+    <node id="P01133" />
+    <node id="P36551" />
+    <node id="MX-68" />
+    <node id="P01584" />
+    <node id="RA" />
+    <node id="CIA" />
+    <node id="MYC" />
+    <node id="SP1" />
+    <node id="DB00482" />
+    <node id="DB00533" />
+    <node id="OSTEOARTHRITIS" />
+    <node id="RHEUMATOID ARTHRITIS" />
+    <node id="PLACEBO" />
+    <node id="PFDHFR-TS" />
+    <node id="BH4" />
+    <node id="WR99210" />
+    <node id="PYRIMETHAMINE" />
+    <node id="GTPCH" />
+    <node id="V1/S" />
+    <node id="HPH-1" />
+    <node id="P30793" />
+    <node id="C.962-966DELACCCC" />
+    <node id="G.1429-1433DELACCCC" />
+    <node id="P.ASN321FS" />
+    <node id="HYDROCHLOROTHIAZIDE" />
+    <node id="AMILORIDE" />
+    <node id="INDOMETHACIN" />
+    <node id="IL-6R" />
+    <node id="P-P40763" />
+    <node id="PHARYNGEAL_CANCER" />
+    <node id="T-CELL LYMPHOMA" />
+    <node id="RELAPSED OR REFRACORY PERIPHERAL T-CELL LYMPHOMA" />
+    <node id="CUTANEOUS T-CELL LYMPHOMA" />
+    <node id="MUCOSITIS" />
+    <node id="THROMBOCYTOPENIA" />
+    <node id="FATIGUE" />
+    <node id="MS-275" />
+    <node id="TMEPA1" />
+    <node id="O15393" />
+    <node id="ARDELTACTD" />
+    <node id="PKI166" />
+    <node id="P14210" />
+    <node id="OSA" />
+    <node id="HGFR" />
+    <node id="NCI-H460" />
+    <node id="TGI" />
+    <edge source="DB00773" target="P01308">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="DB00773" target="P51606">
+      <data key="d0">6.0</data>
+    </edge>
+    <edge source="DB00773" target="ROS">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="DB00773" target="APOPTOSIS">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB00773" target="P11388">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB00773" target="DMBA">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P01308" target="Q05940">
+      <data key="d0">20.0</data>
+    </edge>
+    <edge source="P01308" target="P12830">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P01308" target="SYNTAXIN 1A">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P01308" target="P60880">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="P01308" target="G PROTEIN">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="ROS" target="AGES">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="APOPTOSIS" target="AGES">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="APOPTOSIS" target="TADALAFIL">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="APOPTOSIS" target="CAVEOLAE">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="APOPTOSIS" target="P01375">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="APOPTOSIS" target="P35228">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="APOPTOSIS" target="P28845">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="AGES" target="P01308-1">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="AGES" target="HYPERGLYCEMIA">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P01308-1" target="DB00820">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="TADALAFIL" target="P21554">
+      <data key="d0">20.0</data>
+    </edge>
+    <edge source="TADALAFIL" target="TGF-BETA1">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="TADALAFIL" target="INDUCIBLE NITRIC OXIDE SYNTHASE">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="TADALAFIL" target="XANTHINE OXIDOREDUCTASE">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="TADALAFIL" target="CVOD">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="TADALAFIL" target="Q8NE62">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="TADALAFIL" target="P29474">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="TADALAFIL" target="O76074">
+      <data key="d0">20.0</data>
+    </edge>
+    <edge source="P21554" target="SR141716A">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P21554" target="P15692">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="P21554" target="CB2">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P21554" target="DB06813">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P21554" target="P00533">
+      <data key="d0">16.0</data>
+    </edge>
+    <edge source="P21554" target="O75791">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P21554" target="P29323">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P21554" target="DB00820">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="DB00820" target="Q8NE62">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="CVOD" target="CN DAMAGE">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P37840" target="PARKINSON'S DISEASE">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P37840" target="Q9BXM7">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P37840" target="A30P">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P37840" target="PD">
+      <data key="d0">19.0</data>
+    </edge>
+    <edge source="P37840" target="NIGROSTRIATAL">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="PARKINSON'S DISEASE" target="DB08918">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="A30P" target="PD">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="Q05940" target="DOPAMINE">
+      <data key="d0">6.0</data>
+    </edge>
+    <edge source="Q05940" target="TETRABENAZINE">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="Q05940" target="GLU">
+      <data key="d0">18.0</data>
+    </edge>
+    <edge source="Q05940" target="PP">
+      <data key="d0">16.0</data>
+    </edge>
+    <edge source="Q05940" target="T1DM">
+      <data key="d0">14.0</data>
+    </edge>
+    <edge source="Q05940" target="MONKEY">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="Q05940" target="HUMAN">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="Q05940" target="TH">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="DOPAMINE" target="DB00281">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="DOPAMINE" target="GBR12909">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="DOPAMINE" target="NAC">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DOPAMINE" target="FSCV">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="DB00588" target="ANNEXIN1">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="DB00588" target="ANEXIN1">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="DB00588" target="P05112">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB00588" target="ANXIN1">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="ANNEXIN1" target="BETA2-INTEGRIN">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="BETA2-INTEGRIN" target="ANEXIN1">
+      <data key="d0">19.0</data>
+    </edge>
+    <edge source="BETA2-INTEGRIN" target="FP">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="BETA2-INTEGRIN" target="ANXIN1">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="FLUTICASONE PROPIONATE" target="EOSTAXIN">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="ANEXIN1" target="FP">
+      <data key="d0">18.0</data>
+    </edge>
+    <edge source="ANEXIN1" target="P47712">
+      <data key="d0">18.0</data>
+    </edge>
+    <edge source="ANEXIN1" target="RAS-MAPK">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="ANEXIN1" target="JAK-STAT">
+      <data key="d0">6.0</data>
+    </edge>
+    <edge source="ANEXIN1" target="WNT">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="FP" target="P01375">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="FP" target="P08235">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="FP" target="P47712">
+      <data key="d0">17.0</data>
+    </edge>
+    <edge source="FP" target="ANXIN1">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="FP" target="P05177">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P47712" target="SBMA">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P47712" target="ANXIN1">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P35610" target="CAVEOLAE">
+      <data key="d0">18.0</data>
+    </edge>
+    <edge source="P35610" target="P05231">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P35610" target="P42224">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P35610" target="Q00978">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P35610" target="Q13651">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P06702" target="P05109">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P06702" target="ATHEROSCLEROSIS">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P05109" target="ATHEROSCLEROSIS">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P05231" target="P35367">
+      <data key="d0">6.0</data>
+    </edge>
+    <edge source="P05231" target="P35228">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="P05231" target="P40763">
+      <data key="d0">11.0</data>
+    </edge>
+    <edge source="P05231" target="SASP">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P05231" target="ATHEROSCLEROSIS">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P05231" target="DB00107">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="P05231" target="DB02546">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P05231" target="DB06603">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P05231" target="P00533">
+      <data key="d0">11.0</data>
+    </edge>
+    <edge source="P05231" target="IL-6R">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P05231" target="PHARYNGEAL_CANCER">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="Q00978" target="ATHEROSCLEROSIS">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="Q13651" target="ATHEROSCLEROSIS">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="CAV-1" target="SMC">
+      <data key="d0">18.0</data>
+    </edge>
+    <edge source="CAV-1" target="LIPID HOMEOSTASIS">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P35367" target="P01375">
+      <data key="d0">17.0</data>
+    </edge>
+    <edge source="P35367" target="NF-&#922;B">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P35367" target="KETOTIFEN">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P35367" target="C-REL">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P35367" target="CETIRIZINE">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P35367" target="NF-&#312;B">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P01375" target="DB00107">
+      <data key="d0">15.0</data>
+    </edge>
+    <edge source="P01375" target="P05112">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="P01375" target="DB00480">
+      <data key="d0">17.0</data>
+    </edge>
+    <edge source="P01375" target="P35228">
+      <data key="d0">6.0</data>
+    </edge>
+    <edge source="P01375" target="P60880">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P01375" target="NF-&#312;B">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P01375" target="C-REL">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P01375" target="DB00741">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P01375" target="CC-4047">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P01375" target="MX-68">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P01375" target="P00533">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="NF-&#922;B" target="MIR-146A">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="KETOTIFEN" target="NF-&#312;B">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="KETOTIFEN" target="C-REL">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="C-REL" target="NF-&#312;B">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="NF-&#312;B" target="B">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="GBR12909" target="Q01959">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="NAC" target="DB04844">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="NAC" target="FSCV">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="Q01959" target="DB04844">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="Q01959" target="ADHD">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P04626" target="P42336">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="P04626" target="P60484">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P04626" target="TRASTUZUMAB">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P04626" target="DB00072">
+      <data key="d0">5.0</data>
+    </edge>
+    <edge source="P04626" target="P10275">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P04626" target="DB02901">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P04626" target="ARDELTACTD">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P04626" target="PKI166">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="TRASTUZUMAB" target="PHOSPHATIDYLINOSITOL_3_KINASE_PATHWAY">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P17936" target="P15692">
+      <data key="d0">18.0</data>
+    </edge>
+    <edge source="P17936" target="P05019">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P17936" target="P05112">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="P17936" target="P05113">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="P17936" target="P35225">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="P15692" target="ASTHMA">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P15692" target="P05019">
+      <data key="d0">16.0</data>
+    </edge>
+    <edge source="P15692" target="P12956">
+      <data key="d0">20.0</data>
+    </edge>
+    <edge source="P15692" target="GUGGULSTERONE">
+      <data key="d0">11.0</data>
+    </edge>
+    <edge source="P15692" target="P40763">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P15692" target="P27540">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P15692" target="COLON_CANCER">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P15692" target="CBP">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P15692" target="ATHEROSCLEROSIS">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P15692" target="AR">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P15692" target="SBMA">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P15692" target="NICOTINE">
+      <data key="d0">15.0</data>
+    </edge>
+    <edge source="P15692" target="NSCLC">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P15692" target="DB00184">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="P15692" target="DB00107">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P15692" target="TAC-101">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P15692" target="DLD-1">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P15692" target="DB09079">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P15692" target="BREAST_CANCER">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P15692" target="P56270">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P15692" target="KLF-4">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P15692" target="ANGIOGENESIS">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P15692" target="OSA">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="ASTHMA" target="GM-P04141">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P05019" target="P12830">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P05112" target="P18621">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="P05112" target="ATHEROSCLEROSIS">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P05112" target="DB00107">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="P05113" target="ATHEROSCLEROSIS">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="DB00107" target="ANDROGENETIC ALOPEA">
+      <data key="d0">6.0</data>
+    </edge>
+    <edge source="DB00107" target="P13500">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="DB00107" target="Q8NE62">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="DB00107" target="Q9UBN7">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="ANDROGENETIC ALOPEA" target="P16104">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="AR" target="P16104">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="AR" target="P10275">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="AR" target="DB02901">
+      <data key="d0">18.0</data>
+    </edge>
+    <edge source="AR" target="DB05812">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="AR" target="ENZALUTAMIDE">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="AR" target="P50750-700">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="AR" target="ARN-509">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="AR" target="GALETERONE">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="AR" target="SBMA">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="AR" target="CBP">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="AR" target="LNCAP-O43633">
+      <data key="d0">11.0</data>
+    </edge>
+    <edge source="AR" target="PSA">
+      <data key="d0">2.0</data>
+    </edge>
+    <edge source="AR" target="P00533">
+      <data key="d0">5.0</data>
+    </edge>
+    <edge source="P16104" target="NO">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P16104" target="DB00072">
+      <data key="d0">4.0</data>
+    </edge>
+    <edge source="P16104" target="8-NITROGUANINE">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="P16104" target="Q13315">
+      <data key="d0">19.0</data>
+    </edge>
+    <edge source="P16104" target="TUBACIN">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P16104" target="DB02546">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P16104" target="ACIDIC_PH">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P16104" target="DB00290">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P16104" target="P53">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="Q8NE62" target="P29474">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="Q8NE62" target="&#914;-SGC">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P29474" target="TADALI">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P29474" target="THSG">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P29474" target="DB00035">
+      <data key="d0">36.0</data>
+    </edge>
+    <edge source="P29474" target="DB02527">
+      <data key="d0">36.0</data>
+    </edge>
+    <edge source="P29474" target="SER1177">
+      <data key="d0">19.0</data>
+    </edge>
+    <edge source="P29474" target="PI3K">
+      <data key="d0">16.0</data>
+    </edge>
+    <edge source="P29474" target="P30518">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P29474" target="P00374">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P29474" target="BH4">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P29474" target="HPH-1">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P29474" target="P30793">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P63165" target="Q06609">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="Q06609" target="RADIAL FORMATION">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="DB00184" target="NSCLC">
+      <data key="d0">19.0</data>
+    </edge>
+    <edge source="DB00184" target="BREAST_CANCER">
+      <data key="d0">16.0</data>
+    </edge>
+    <edge source="DB00184" target="BREAST CANCER">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="NSCLC" target="NICOTINE">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="NSCLC" target="DB06813">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="BREAST_CANCER" target="ACIDIC_PH">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="NICOTINE" target="P12830">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="NICOTINE" target="VIMENTIN">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="NICOTINE" target="FIBRONECTIN">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="NICOTINE" target="ALPHA7-NACHRS">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="NICOTINE" target="EMT">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P12830" target="E(2)">
+      <data key="d0">16.0</data>
+    </edge>
+    <edge source="P12830" target="DB00290">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P12830" target="EMT">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P12830" target="DB04468">
+      <data key="d0">6.0</data>
+    </edge>
+    <edge source="P12830" target="Q15648">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P12830" target="P29323">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P12830" target="MDA-MD-435">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P12830" target="CELL_CYCLE">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="VIMENTIN" target="EMT">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="FIBRONECTIN" target="EMT">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="NO" target="P11388">
+      <data key="d0">18.0</data>
+    </edge>
+    <edge source="NO" target="P35228">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="NO" target="TOP2&#914;CC">
+      <data key="d0">11.0</data>
+    </edge>
+    <edge source="NO" target="DB00035">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="NO" target="P25963">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="NO" target="NF-KAPPAB">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="NO" target="IL-12 P40">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P11388" target="GSNO">
+      <data key="d0">18.0</data>
+    </edge>
+    <edge source="P11388" target="MITOXANTRONE">
+      <data key="d0">14.0</data>
+    </edge>
+    <edge source="P11388" target="ACIDIC_PH">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P35228" target="DB00435">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P35228" target="P60880">
+      <data key="d0">19.0</data>
+    </edge>
+    <edge source="P35228" target="P01579">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P35228" target="NF-KAPPAB">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P35228" target="P25054">
+      <data key="d0">11.0</data>
+    </edge>
+    <edge source="P10275" target="DB02901">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P10275" target="LNCAP-O43633">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P10275" target="SBMA">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P10275" target="VEGF164">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P10275" target="P00533">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="DB02901" target="LNCAP-O43633">
+      <data key="d0">2.0</data>
+    </edge>
+    <edge source="DB02901" target="CHO">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="DB02901" target="P00533">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="DB05812" target="CYP17A">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="DB05812" target="MCRPC">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P38398" target="BREAST_CARCINOMA">
+      <data key="d0">16.0</data>
+    </edge>
+    <edge source="P38398" target="LOH">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P38398" target="DNA_REPAIR_PATHWAY">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="Q00987" target="P12956">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="Q00987" target="AKT">
+      <data key="d0">17.0</data>
+    </edge>
+    <edge source="Q00987" target="P53">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="Q00987" target="BAX">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="P12956" target="AKT">
+      <data key="d0">19.0</data>
+    </edge>
+    <edge source="P12956" target="MITOMYCIN C">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P12956" target="DB02546">
+      <data key="d0">20.0</data>
+    </edge>
+    <edge source="P12956" target="FLIP">
+      <data key="d0">29.0</data>
+    </edge>
+    <edge source="P12956" target="RADIAL FORMATION">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P12956" target="INTERSTRAND CROSSLINK">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P12956" target="Q9UBN7">
+      <data key="d0">19.0</data>
+    </edge>
+    <edge source="P12956" target="Q96EB6">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="AKT" target="BAX">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P53" target="THSG">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P53" target="BAX">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P53" target="PUMA">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P53" target="BID">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P53" target="BCL2">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P53" target="DB00133">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="BAX" target="Q96EB6">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="RADIAL FORMATION" target="P43351">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="RADIAL FORMATION" target="P49917">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="RADIAL FORMATION" target="P49959">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB02546" target="FLIP">
+      <data key="d0">21.0</data>
+    </edge>
+    <edge source="DB02546" target="Q9UBN7">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="DB02546" target="CHK2">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB02546" target="TUBACIN">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB02546" target="CASPASE8">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="DB02546" target="MIR-146A">
+      <data key="d0">11.0</data>
+    </edge>
+    <edge source="FLIP" target="Q9UBN7">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="FLIP" target="HDAC">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="MITOXANTRONE" target="HIF-1&#913;">
+      <data key="d0">21.0</data>
+    </edge>
+    <edge source="MITOXANTRONE" target="TRANSLATION">
+      <data key="d0">11.0</data>
+    </edge>
+    <edge source="HIF-1&#913;" target="SOLID TUMOR">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P09341" target="P13501">
+      <data key="d0">6.0</data>
+    </edge>
+    <edge source="P13501" target="P10147">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="DB00072" target="NCI-N87">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="GUGGULSTERONE" target="P40763">
+      <data key="d0">18.0</data>
+    </edge>
+    <edge source="GUGGULSTERONE" target="P27540">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="GUGGULSTERONE" target="ANGIOGENESIS">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="GUGGULSTERONE" target="COLON CANCER">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P40763" target="COLON_CANCER">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P40763" target="P00533">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P40763" target="Q9Y6X2">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P40763" target="O75030">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P40763" target="Q13547">
+      <data key="d0">16.0</data>
+    </edge>
+    <edge source="COLON_CANCER" target="TAC-101">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="SBMA" target="DB00169">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="SBMA" target="DB00755">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="8-OXODG" target="Q13315">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="Q13315" target="ACIDIC_PH">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="P00533" target="DB06813">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="P00533" target="P01133">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P00533" target="P36551">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P00533" target="P35354">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P00533" target="P30518">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P00533" target="MYC">
+      <data key="d0">5.0</data>
+    </edge>
+    <edge source="P00533" target="SP1">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P00533" target="MS-275">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P00533" target="Q13547">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P00533" target="ARDELTACTD">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P00533" target="PKI166">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="E(2)" target="LUNG_ADENOCARCINOMA">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="E(2)" target="P06401">
+      <data key="d0">16.0</data>
+    </edge>
+    <edge source="E(2)" target="Q15648">
+      <data key="d0">19.0</data>
+    </edge>
+    <edge source="E(2)" target="DB04468">
+      <data key="d0">5.0</data>
+    </edge>
+    <edge source="E(2)" target="DB00947">
+      <data key="d0">5.0</data>
+    </edge>
+    <edge source="P06401" target="DB04468">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="P06401" target="Q15648">
+      <data key="d0">5.0</data>
+    </edge>
+    <edge source="P06401" target="DB00351">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="Q15648" target="P56270">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="Q15648" target="ADENOCARCINOMA">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="THSG" target="SA_BETA_GAL">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="THSG" target="SHR">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="THSG" target="SA-&#914;-GAL">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="THSG" target="P16">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="THSG" target="Q96EB6">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P18621" target="Q9Y6W8">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P18621" target="P10747">
+      <data key="d0">3.0</data>
+    </edge>
+    <edge source="P18621" target="P60568">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P60568" target="P13232">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P60568" target="ATHEROSCLEROSIS">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P13232" target="P42229">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="P13232" target="ATHEROSCLEROSIS">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="O75030" target="HUBC9">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="O75030" target="DB00133">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="O75030" target="K201">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="O75030" target="S73A">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="O75030" target="MG132">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="O75030" target="K201R">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="O75030" target="Q9Y6X2">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="O75030" target="MELANOCYTES">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="O75030" target="MAST CELLS">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="O75030" target="DB00338">
+      <data key="d0">4.0</data>
+    </edge>
+    <edge source="T1DM" target="HMA">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="Q9UBN7" target="TUBACIN">
+      <data key="d0">11.0</data>
+    </edge>
+    <edge source="Q9UBN7" target="ETOPOSIDE">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="Q9UBN7" target="DOXORUBICIN">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="TUBACIN" target="P35638">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="BICALUTAMIDE" target="LNCAP-O43633">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="LNCAP-O43633" target="DB00624">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="LNCAP-O43633" target="DB01128">
+      <data key="d0">11.0</data>
+    </edge>
+    <edge source="DB01128" target="PSA">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="PSA" target="TMEPA1">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="PSA" target="O15393">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="ACIDIC_PH" target="ATR">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="DB00338" target="Q04656">
+      <data key="d0">12.0</data>
+    </edge>
+    <edge source="DB00338" target="P20648">
+      <data key="d0">14.0</data>
+    </edge>
+    <edge source="DB00338" target="TYROSINASE">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="DB00338" target="ENDOH">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="Q04656" target="TYROSINASE">
+      <data key="d0">18.0</data>
+    </edge>
+    <edge source="Q04656" target="OMEPRAZOLE">
+      <data key="d0">18.0</data>
+    </edge>
+    <edge source="BLEOMYCIN" target="DSBS">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="DSBS" target="SASP">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="SASP" target="P08253">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="SASP" target="P14780">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="TYROSINASE" target="OMEPRAZOLE">
+      <data key="d0">23.0</data>
+    </edge>
+    <edge source="Q9Y275" target="AICD">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="AICD" target="CDA">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="AICD" target="HUMAN">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="AICD" target="MICE">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="HUMAN" target="I48">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="MIFEPRISTONE" target="DB00294">
+      <data key="d0">36.0</data>
+    </edge>
+    <edge source="MIFEPRISTONE" target="P17813">
+      <data key="d0">18.0</data>
+    </edge>
+    <edge source="MIFEPRISTONE" target="KI67">
+      <data key="d0">15.0</data>
+    </edge>
+    <edge source="DB00294" target="P56817">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="Q9Y6X2" target="MICROPHTHALMIA TRANSCRIPTION FACTOR">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="RANTES" target="ATHEROSCLEROSIS">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="ATHEROSCLEROSIS" target="IL-1RA">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="ATHEROSCLEROSIS" target="MIP-1 ALPHA">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="ATHEROSCLEROSIS" target="MIP-1 BETA">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="ATHEROSCLEROSIS" target="Q16552">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="ATHEROSCLEROSIS" target="P01579">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="ATHEROSCLEROSIS" target="LIPID HOMEOSTASIS">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P01579" target="DB00741">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="Q01196" target="AML">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="Q01196" target="DB00313">
+      <data key="d0">19.0</data>
+    </edge>
+    <edge source="Q01196" target="Q06455">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="AML" target="DB00313">
+      <data key="d0">12.0</data>
+    </edge>
+    <edge source="Q06455" target="HDAC">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="Q06455" target="DB00313">
+      <data key="d0">19.0</data>
+    </edge>
+    <edge source="HDAC" target="DB00313">
+      <data key="d0">20.0</data>
+    </edge>
+    <edge source="HDAC" target="MTX">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="HDAC" target="P08700">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="DB00313" target="Q92769">
+      <data key="d0">19.0</data>
+    </edge>
+    <edge source="DB00313" target="Q13547">
+      <data key="d0">18.0</data>
+    </edge>
+    <edge source="DB00313" target="P08700">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="Q13547" target="MTX">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="Q13547" target="MS-275">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P08700" target="Q01196-Q06455-Q13547">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P11473" target="P10276">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P11473" target="P10826">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P11473" target="P13631">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="P10276" target="P10826">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="P10276" target="TAC-101">
+      <data key="d0">17.0</data>
+    </edge>
+    <edge source="BREAST CANCER" target="KLF-4">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB01109" target="P48061">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB01109" target="P61073">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB01109" target="MDA-MB-231">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P48061" target="DB06822">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P48061" target="P61073">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="TAC-101" target="AP-1">
+      <data key="d0">15.0</data>
+    </edge>
+    <edge source="TAC-101" target="VASCULAR_ENDOTHELIAL_GROWTH_FACTOR">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="TAC-101" target="P53602">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="DB09079" target="PDAC">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="DB09079" target="P17948">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="DB09079" target="P11362">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="DB09079" target="PDGFR&#913;/&#914;">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="DB09079" target="PI3K">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="DB09079" target="MAPK">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="PDAC" target="NINTEDANIB">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="PDAC" target="GEMCITABINE">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="PI3K" target="SER1177">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB00480" target="IL1B">
+      <data key="d0">15.0</data>
+    </edge>
+    <edge source="DB00480" target="IL6">
+      <data key="d0">15.0</data>
+    </edge>
+    <edge source="DB00480" target="IL12">
+      <data key="d0">15.0</data>
+    </edge>
+    <edge source="DB00480" target="GMCSF">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="IL1B" target="CC-4047">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="IL6" target="CC-4047">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="IL12" target="CC-4047">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="GMCSF" target="CC-4047">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="KLF-4" target="HDAC-2">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="KLF-4" target="HDAC-3">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="DB04468" target="ERALPHA">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="DB04468" target="ERBETA">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="E2" target="P03372">
+      <data key="d0">18.0</data>
+    </edge>
+    <edge source="E2" target="MDA-MB-468">
+      <data key="d0">20.0</data>
+    </edge>
+    <edge source="E2" target="P21CIP-1">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="E2" target="Q01094">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="E2" target="P12004">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="E2" target="G0/P">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="E2" target="DNA SYNTHESIS">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P03372" target="ICL182780">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P03372" target="MDA-MB-468">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="MDA-MB-468" target="DB00783">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="Q01094" target="-1">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="P12004" target="-1">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="DB00083" target="P21964">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="DB00083" target="P20813">
+      <data key="d0">6.0</data>
+    </edge>
+    <edge source="DB00083" target="P35462">
+      <data key="d0">5.0</data>
+    </edge>
+    <edge source="DB00083" target="P05177">
+      <data key="d0">4.0</data>
+    </edge>
+    <edge source="DB00083" target="P08684">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB00083" target="P60880">
+      <data key="d0">19.0</data>
+    </edge>
+    <edge source="DB00083" target="DB08918">
+      <data key="d0">6.0</data>
+    </edge>
+    <edge source="DB00083" target="X-RAY CRYSTAL STRUCTURE">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB00083" target="BOTULISM">
+      <data key="d0">30.0</data>
+    </edge>
+    <edge source="DB00083" target="DB00083">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB00083" target="CLOSTRIDIUM BOTULINUM">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="DB00083" target="NAP">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="DB00083" target="SNARE">
+      <data key="d0">19.0</data>
+    </edge>
+    <edge source="DB00083" target="4,7-ACQ">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="DB00083" target="CQR">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB00083" target="MEFLOQUINE">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB00083" target="GT1B">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="DB00083" target="GD1A">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="DB00083" target="GM1">
+      <data key="d0">5.0</data>
+    </edge>
+    <edge source="DB00083" target="NEURO2A">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="DB00083" target="SKN-SH">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="DB00083" target="VAMP/SYNAPTOBREVIN">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB00083" target="ALC">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="DB00083" target="Q99259">
+      <data key="d0">16.0</data>
+    </edge>
+    <edge source="DB00083" target="GABAERGIC">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="DB00083" target="GLUTAMATERGIC">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="DB00083" target="DB00118">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB00083" target="BONT/A">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="DB00083" target="BONT/B">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="DB00083" target="ACH">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB00083" target="NMJ">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB00083" target="Q9Y5X9">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB00083" target="NEUROTRANSMITTER RELEASE">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="DB00083" target="Q9ULX5">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="DB00083" target="GFP">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="DB00083" target="MASTOPARAN-7">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="DB00083" target="8-HYDROXYQUINOLINE">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB00083" target="HYDROXAMIC ACID">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB00083" target="ZN-ENDOPROTEASE">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB00083" target="S25-R198T">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB00083" target="MRNA DISPLAY">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="DB00083" target="ADHD">
+      <data key="d0">5.0</data>
+    </edge>
+    <edge source="DB00083" target="P23763">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="DB00083" target="BONT">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB00083" target="TS">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB00083" target="SV2">
+      <data key="d0">33.0</data>
+    </edge>
+    <edge source="DB00083" target="CSY">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="DB00083" target="RAT">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB00083" target="Q15631">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="DB00083" target="P63027">
+      <data key="d0">18.0</data>
+    </edge>
+    <edge source="DB00083" target="DB01593">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB00083" target="NAPS">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="DB00083" target="DTT">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="DB00083" target="SYNAPTOBREVIN">
+      <data key="d0">5.0</data>
+    </edge>
+    <edge source="DB00083" target="PERIPHERAL NEUROPATHY">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="DB00083" target="FORMALIN-INDUCED PAIN">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="DB00083" target="COLCHICINE">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="DB00083" target="TRIGEMINAL NUCLEUS CAUDALIS">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="DB00083" target="P11274">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB00083" target="C1">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="DB00083" target="GASTROCNEMIUS">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="DB00083" target="LONG-TERM PARALYSIS">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB00083" target="SNAP-25">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="DB00083" target="NOCIPEPTOR">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="DB00083" target="DB00171">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB00083" target="SREBP">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="DB00083" target="DB00083_L">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="DB00083" target="NEUROMUSCULAR_TRANSMISSION">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB00083" target="ARG-ARG-GLY-CYS">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB00083" target="DTH">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB00083" target="VAMP">
+      <data key="d0">20.0</data>
+    </edge>
+    <edge source="DB00083" target="RBONT/A LC">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="DB00083" target="BONT/E">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB00083" target="ER">
+      <data key="d0">6.0</data>
+    </edge>
+    <edge source="DB00083" target="SEPSC">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="DB00083" target="MEPSC">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="DB00083" target="SYNTAXIN">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="DB00083" target="GLUTAMATE">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="DB00083" target="CA2+">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="DB00083" target="ESNS">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB00083" target="GLUTAMATE RELEASE">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="DB00083" target="RECOMBINANT P60880">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="DB00083" target="Q8NER1">
+      <data key="d0">3.0</data>
+    </edge>
+    <edge source="DB00083" target="OSTEOBLAST">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="DB00083" target="EXOCYTOSIS">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="DB00083" target="ANTIMITOTIC">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="DB00083" target="ANTITUMOR">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="DB00083" target="TYPE A BOTULISM">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="DB00083" target="IGY">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="DB00083" target="MAB10F12">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="DB00083" target="NEUROMUSCULAR TRANSMISSION">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P21964" target="DB03823">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P05177" target="DB00951">
+      <data key="d0">19.0</data>
+    </edge>
+    <edge source="P05177" target="RFP">
+      <data key="d0">17.0</data>
+    </edge>
+    <edge source="P05177" target="DB11245">
+      <data key="d0">5.0</data>
+    </edge>
+    <edge source="P05177" target="DB03823">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P60880" target="4,7-ACQ">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P60880" target="DB01593">
+      <data key="d0">18.0</data>
+    </edge>
+    <edge source="P60880" target="BONT/C1-LC">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P60880" target="GT1B">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P60880" target="BONT/E">
+      <data key="d0">69.0</data>
+    </edge>
+    <edge source="P60880" target="SYNTAXIN 1">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P60880" target="PLASMA MEMBRANE RECYCLING">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P60880" target="Q99259">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P60880" target="AB">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P60880" target="VAMP">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P60880" target="SNARE">
+      <data key="d0">18.0</data>
+    </edge>
+    <edge source="P60880" target="NEUROTRANSMITTER RELEASE">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P60880" target="DB00083 (RYM)">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P60880" target="BOTULISM">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P60880" target="DB00083_LC">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P60880" target="P25963">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P60880" target="NF-KAPPAB">
+      <data key="d0">17.0</data>
+    </edge>
+    <edge source="P60880" target="MOTOR IMPAIRMENT">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="P60880" target="DB00083 LC">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P60880" target="GM-P04141">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P60880" target="CASPASE-6">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P60880" target="DB00083-LC">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P60880" target="DB05232">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P60880" target="Q15631">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P60880" target="P46459">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P60880" target="NA">
+      <data key="d0">19.0</data>
+    </edge>
+    <edge source="P60880" target="BONT">
+      <data key="d0">11.0</data>
+    </edge>
+    <edge source="P60880" target="P63027">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P60880" target="CS-BOTIM/B">
+      <data key="d0">11.0</data>
+    </edge>
+    <edge source="P60880" target="BOTULINUM NEUROTOXIN">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="P60880" target="PHILADELPHIA_CHROMOSOME_POSITIVE_ADL">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="P60880" target="CA2+-REGULATED">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P60880" target="C1">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P60880" target="GH4C1">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P60880" target="PROLACTIN">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P60880" target="BOONT/A">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P60880" target="DB00142">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P60880" target="DB00120">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P60880" target="DB00135">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P60880" target="CDK5">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P60880" target="L(II-III)">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P60880" target="LONG-TERM PARALYSIS">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P60880" target="P197">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P60880" target="K_V2_1">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P60880" target="CA_V1_2">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P60880" target="METHYL_BETA_CYCLODEXTRIN">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P60880" target="DB00083_L">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P60880" target="L_CHAIN">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P60880" target="P01282">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="P60880" target="AE">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P60880" target="SNAXIN1A">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P60880" target="CLOSTRIDIUM BOTULINUM">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P60880" target="DB00083_AD">
+      <data key="d0">17.0</data>
+    </edge>
+    <edge source="P60880" target="P80511">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P60880" target="DB00083-LC:SP">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P60880" target="LC/A">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P60880" target="BONT/F">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P60880" target="EXOCYTOSIS">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P60880" target="DB02527">
+      <data key="d0">16.0</data>
+    </edge>
+    <edge source="P60880" target="Q8WZA2">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P60880" target="Q9UQ26">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P60880" target="TH">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P60880" target="IL-12 P40">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P60880" target="COLOBOMA">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P60880" target="CM/+">
+      <data key="d0">20.0</data>
+    </edge>
+    <edge source="P60880" target="SPINAL MOTOR NEURONS">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P60880" target="APOE/LDLR_KO">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P60880" target="ADHD">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="DB08918" target="VARIANT">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="BOTULISM" target="L_CHAIN">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="NAP" target="BONT/EC">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="SNARE" target="BONT">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="SNARE" target="P197">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="SNARE" target="SYNAPTOTAGMIN">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="DB01593" target="SYNTAXIN">
+      <data key="d0">19.0</data>
+    </edge>
+    <edge source="DB01593" target="BONT/C1-LC">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="DB01593" target="RBONT/A LC">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="SYNTAXIN" target="BONT/C1-LC">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="SYNTAXIN" target="CA2+-REGULATED">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="PERGOLIDE" target="P41595">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P41595" target="DB01186">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P41595" target="CABERGOLINE">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P41595" target="DB01200">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P41595" target="LISURIDE">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P41595" target="TERGURIDE">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="VAMP/SYNAPTOBREVIN" target="TENT">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="VAMP/SYNAPTOBREVIN" target="BONT/B">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="VAMP/SYNAPTOBREVIN" target="BONT/F">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="BONT/F" target="CLOSTRIDIUM.BOTULINUM">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="BONT/E" target="NEUROTRANSMITTER RELEASE">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="BONT/C" target="SYNTAXIN 1">
+      <data key="d0">11.0</data>
+    </edge>
+    <edge source="DB00118" target="AU">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="DB00035" target="P30518">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB00035" target="DB02527">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P30518" target="DB02527">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P30518" target="P35354">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P30518" target="C.962-966DELACCCC">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P30518" target="P.ASN321FS">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P30518" target="HYDROCHLOROTHIAZIDE">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P30518" target="AMILORIDE">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P30518" target="INDOMETHACIN">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="DB02527" target="EXOCYTOSIS">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="DB02527" target="P60880(1-197)">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="DB02527" target="Q8WZA2">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="DB02527" target="DB00501">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="DB02527" target="PKA">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="BA" target="VAMP">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="GFP" target="RAT TRACHEA">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB00083_LC" target="MAS-7">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="MAS-7" target="PHOSPHOLIPASE_A2">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="DB00435" target="GM-P04141">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="DB00435" target="CASPASE-6">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="DB00435" target="P25054">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="DB00435" target="DB00171">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="DB00435" target="RAT">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB00435" target="P51617">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="NF-KAPPAB" target="LPS">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="DB00741" target="Q14790">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="DB00741" target="P42574">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="DB00741" target="P04150">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="DB00741" target="P28845">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="MT" target="DB00951">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB00951" target="MT-/-">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="DB00951" target="MT+/+">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="DB00951" target="P05181">
+      <data key="d0">11.0</data>
+    </edge>
+    <edge source="DB00951" target="DB01045">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="MT-/-" target="RFP">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P05181" target="DB11245">
+      <data key="d0">5.0</data>
+    </edge>
+    <edge source="P05181" target="DB03823">
+      <data key="d0">6.0</data>
+    </edge>
+    <edge source="P05181" target="EGCG">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="BONT" target="P23763">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="BONT" target="NAPS">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P21397" target="ADHD">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P21397" target="DB01171">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="ADHD" target="60880">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="ADHD" target="P21917">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="ADHD" target="P21918">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="ADHD" target="P31645">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="ADHD" target="P28222">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P23763" target="P63027">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="P23763" target="I48">
+      <data key="d0">18.0</data>
+    </edge>
+    <edge source="P23763" target="M48">
+      <data key="d0">20.0</data>
+    </edge>
+    <edge source="P23763" target="DIAPHRAGM">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P23763" target="DB00083-G">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P63027" target="DB00083-G">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="FIREFLY LUCIFERASE" target="P00374">
+      <data key="d0">3.0</data>
+    </edge>
+    <edge source="P00374" target="DB00544">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P00374" target="DB06813">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P00374" target="SANGUINARINE">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P00374" target="CHO">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P00374" target="BC">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P00374" target="MX-68">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P00374" target="PFDHFR-TS">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P00374" target="BH4">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P00374" target="PYRIMETHAMINE">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P00374" target="V1/S">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P00374" target="MTX">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P29323" target="DB06813">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P04818" target="TBE">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P04818" target="DB00544">
+      <data key="d0">17.0</data>
+    </edge>
+    <edge source="P04818" target="AG-331">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P04818" target="DB00293">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P04818" target="DB00322">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P04818" target="TS-BS">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB00544" target="TS">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB00544" target="TS-BS">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="DB00544" target="DB00515">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="DB00544" target="Q14117">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="DB00544" target="P23919">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="DB00544" target="P33316">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="DB00544" target="Q05932">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="DB00544" target="Q92820">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="DB00544" target="P15531">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="DB00544" target="Q8TCD5">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="DB00544" target="P23921">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="DB00544" target="Q9BZX2">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="DB00544" target="P13051">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="DB00544" target="P11172">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="AG-331" target="TS">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB00293" target="TS">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="TS" target="NOLATREXED">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="TS" target="RALTITREXED">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="TS" target="METHOTREXATE">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="TS" target="DB01629">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="TS" target="DB00432">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="METHOTREXATE" target="DB06813">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="SV2" target="DB00083_AD">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="CASPASE-6" target="LAMIN A/C">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="CASPASE-6" target="Z-VEID-FMK">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="IMMITIS" target="DIROFILARIA_IMMITIS">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="DIROFILARIA_IMMITIS" target="IDEXS_P60880">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P13671" target="BORRELIA_BURGDORFERI_S_L">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="BORRELIA_BURGDORFERI_S_L" target="IDEXS_P60880">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="IDEXS_P60880" target="ANAPLASM_A_PHAGOCYTOPHILUM">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P25054" target="DB00171">
+      <data key="d0">15.0</data>
+    </edge>
+    <edge source="P25054" target="A/R">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P25054" target="PKG">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="DB00171" target="ARG-ARG-GLY-CYS">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB00171" target="Q09428">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="DB00171" target="ERG">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="PKG" target="KATP">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="TS-BS" target="DB09327">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="NAPA" target="P46459">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P46459" target="CELL_CYCLE">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="CELL_CYCLE" target="Q8NI35">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="CELL_CYCLE" target="VAMP7">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="Q05932" target="DB06813">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="DB00368" target="G&#914;">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="DB00368" target="G&#913;(I1/2)">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="DB00368" target="G PROTEIN">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="G&#914;" target="NA">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="G&#913;(I1/2)" target="O75783">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="G&#913;(I1/2)" target="NA">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="NA" target="O75783">
+      <data key="d0">17.0</data>
+    </edge>
+    <edge source="P60880-25E" target="SNARE_COMPLEX">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="SNARE_COMPLEX" target="P60880-25A">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="SNARE_COMPLEX" target="LC/A">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="CS-BOTIM/B" target="RAT TRACHEA">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P11274" target="P00519">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P11274" target="PHILADELPHIA_CHROMOSOME_POSITIVE_ADL">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P11274" target="9;22_TRANSLOCATION">
+      <data key="d0">6.0</data>
+    </edge>
+    <edge source="P11274" target="DB00619">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P11274" target="CML">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P00519" target="9;22_TRANSLOCATION">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P00519" target="DB00619">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P00519" target="CML">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="DB00135" target="DB00083_L">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="CDK5" target="P35">
+      <data key="d0">20.0</data>
+    </edge>
+    <edge source="CDK5" target="NEURONAL MIGRATION">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="CDK5" target="ALZHEIMER'S DISEASE">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="CDK5" target="ROSCOVITINE">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="CDK5" target="L(II-III)">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="ROSCOVITINE" target="P/Q-TYPE VDCC">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="DB00989" target="LOAD">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="BUCHE" target="P22303">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="K_V2_1" target="METHYL_BETA_CYCLODEXTRIN">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="CA_V1_2" target="METHYL_BETA_CYCLODEXTRIN">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="CLOZAPINE" target="SREBP">
+      <data key="d0">19.0</data>
+    </edge>
+    <edge source="SREBP" target="HALOPERIDOL">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="SREBP" target="ACAT2">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="SREBP" target="SCD1">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="DB00083_L" target="ZN(2+)">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="DB00083_L" target="DB00083_H">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="L_CHAIN" target="H_CHAIN">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="ARG-ARG-GLY-CYS" target="BOBT">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P01282" target="P01282">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P01282" target="ACETAZOLAMIDE">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P01282" target="SECRETIN">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="ERG" target="DB01067">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="RBONT/A LC" target="ESCHERICHIA COLI">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="RBONT/A LC" target="MERCURIC COMPOUNDS">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="ESCHERICHIA COLI" target="SYNTAXIN 1A">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="CML" target="STI571">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="SEPSC" target="CA2+">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="SEPSC" target="SR2+">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="RECOMBINANT P60880" target="FACTOR XA">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="Q8NER1" target="P80511">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P80511" target="CGRP8-37">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="DB00083_AD" target="TGNS">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="DB00083_AD" target="NEUROMUSCULAR JUNCTION">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="DB05875" target="P25103">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P25103" target="DB00083-LC:SP">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="DB00083-LC:SP" target="DB01229">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="DB00083-G" target="CHRONIC PAIN">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="ALENDRONATE" target="FPPS">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="FPPS" target="OSTEOBLAST">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB00630" target="OSTEOCLAST">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="DB00630" target="OSTEOBLAST">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="P51617" target="MIR-146A">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="IL-12 P40" target="LPS">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="CM/+" target="TWITCH TENSION">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="CM/+" target="TETANIC TENSION">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="CM/+" target="MEPP AMPLITUDE">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="CM/+" target="MEPP FREQUENCY">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="L-NAME" target="C57BL/6">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="MIR-146A" target="Q9Y4K3">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="MIR-146A" target="DB06603">
+      <data key="d0">11.0</data>
+    </edge>
+    <edge source="DB06813" target="P41440">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="DB06813" target="PERIPHERAL_T_CELL_LYMPHOMA">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="DB06813" target="PTCL">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="DB06813" target="HNSCC">
+      <data key="d0">5.0</data>
+    </edge>
+    <edge source="DB06813" target="PHARYNGEAL_CANCER">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB06813" target="T-CELL LYMPHOMA">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="DB06813" target="RELAPSED OR REFRACORY PERIPHERAL T-CELL LYMPHOMA">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="DB06813" target="CUTANEOUS T-CELL LYMPHOMA">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="DB06813" target="MUCOSITIS">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="DB06813" target="THROMBOCYTOPENIA">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="DB06813" target="FATIGUE">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="DB06813" target="OSA">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB06813" target="NCI-H460">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="DB06813" target="TGI">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="SANGUINARINE" target="BLBC">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="MTX" target="HDLP">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="MTX" target="HISTONE H3">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="MTX" target="CIA">
+      <data key="d0">6.0</data>
+    </edge>
+    <edge source="MTX" target="BH4">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="CHO" target="CG0031N14">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB11245" target="P35354">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="DB11245" target="P09211">
+      <data key="d0">6.0</data>
+    </edge>
+    <edge source="DB11245" target="P07099">
+      <data key="d0">4.0</data>
+    </edge>
+    <edge source="DB11245" target="Q16678">
+      <data key="d0">4.0</data>
+    </edge>
+    <edge source="DB11245" target="P19224">
+      <data key="d0">4.0</data>
+    </edge>
+    <edge source="DB11245" target="NAT2">
+      <data key="d0">4.0</data>
+    </edge>
+    <edge source="DB11245" target="P09488">
+      <data key="d0">4.0</data>
+    </edge>
+    <edge source="DB11245" target="P30711">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB11245" target="HCAS">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="P35354" target="DB00482">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P35354" target="OSA">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="DB03823" target="P04406">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="DB03823" target="P10620">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P04406" target="EGCG">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="EGCG" target="BC">
+      <data key="d0">7.0</data>
+    </edge>
+    <edge source="BC" target="P42898">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="BC" target="Q14116">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="Q14116" target="FAMOTIDINE">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="Q14116" target="H89">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="Q14116" target="P01133">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="DB00501" target="P25021">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="P25021" target="CIMETIDINE">
+      <data key="d0">14.0</data>
+    </edge>
+    <edge source="P25021" target="FAMOTIDINE">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="CIMETIDINE" target="IL18">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="IL18" target="ITIDINE">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="IL18" target="FAMOTIDINE">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="PKA" target="H89">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="PRALATREXATE" target="R/M HNSCC">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="PRALATREXATE" target="HNSCC">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P01133" target="OSA">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="MX-68" target="P01584">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="MX-68" target="RA">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="MX-68" target="CIA">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="DB00482" target="OSTEOARTHRITIS">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="DB00482" target="RHEUMATOID ARTHRITIS">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="DB00482" target="PLACEBO">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="DB00533" target="OSTEOARTHRITIS">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="PFDHFR-TS" target="WR99210">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="BH4" target="GTPCH">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="C.962-966DELACCCC" target="G.1429-1433DELACCCC">
+      <data key="d0">9.0</data>
+    </edge>
+    <edge source="G.1429-1433DELACCCC" target="P.ASN321FS">
+      <data key="d0">10.0</data>
+    </edge>
+    <edge source="P-P40763" target="PHARYNGEAL_CANCER">
+      <data key="d0">1.0</data>
+    </edge>
+    <edge source="P14210" target="OSA">
+      <data key="d0">8.0</data>
+    </edge>
+    <edge source="OSA" target="HGFR">
+      <data key="d0">9.0</data>
+    </edge>
+  </graph>
+</graphml>
