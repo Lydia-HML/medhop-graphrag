@@ -57,21 +57,21 @@ input_storage:
 
 output_storage:
   type: file
-  base_dir: output_batch10_stable
+  base_dir: output
 
 reporting:
   type: file
-  base_dir: logs_batch10_stable
+  base_dir: logs
 
 cache:
   type: json
   storage:
     type: file
-    base_dir: cache_batch10_stable_4b
+    base_dir: cache
 
 vector_store:
   type: lancedb
-  db_uri: output_batch10_stable/lancedb
+  db_uri: output/lancedb
   index_schema:
     text_unit_text:
       index_name: text_unit_text

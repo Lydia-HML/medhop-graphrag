@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+hf_venv/
+venv/
+
+# Environment files
+.env
+*.env
+!*.env.example
+
+# OS/editor metadata
+.DS_Store
+Thumbs.db
+
+# GraphRAG generated artifacts
+graphrag-*/cache/
+graphrag-*/cache_*/
+graphrag-*/logs/
+graphrag-*/logs_*/
+graphrag-*/output/
+graphrag-*/output_*/
+
+# Notebook checkpoints
+.ipynb_checkpoints/

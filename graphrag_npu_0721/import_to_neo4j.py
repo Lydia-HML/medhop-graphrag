@@ -63,7 +63,7 @@ def main() -> None:
     parser.add_argument(
         "--output",
         type=Path,
-        default=Path(__file__).parent / "output_batch10_stable",
+        default=Path(__file__).parent / "output",
     )
     args = parser.parse_args()
 
