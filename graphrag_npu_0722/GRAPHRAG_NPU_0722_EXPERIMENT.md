@@ -49,9 +49,9 @@ Embed-Gemma 300M 建立向量索引
 | `run_graphrag.py` | 修正 Windows CA/SSL 問題後呼叫 GraphRAG CLI |
 | `prompts/` | 實體擷取、關係擷取、社群報告及各種查詢模式使用的提示詞 |
 | `input/` | Notebook 產生的 `doc_0000.txt` 至 `doc_0019.txt` |
-| `output_batch10_stable/` | 0722 當次完成實驗的主要輸出 |
-| `logs_batch10_stable/` | 0722 當次執行日誌與模型呼叫統計 |
-| `cache_batch10_stable_4b/` | 0722 當次 LLM 快取，可減少重跑成本與時間 |
+| `output/` | 0722 當次完成實驗的主要輸出 |
+| `logs/` | 0722 當次執行日誌與模型呼叫統計 |
+| `cache/` | 0722 當次 LLM 快取，可減少重跑成本與時間 |
 | `output/`、`logs/`、`cache/` | 依目前 `settings.yaml` 重新執行時使用的新路徑 |
 | `medhop_tools.py` | 其他問答、評估與 Neo4j 輔助函式；不屬於本次標準 indexing 必要流程 |
 | `utils_1.py` | OpenAI、Neo4j、token 等輔助函式；不屬於本次標準 indexing 必要流程 |
