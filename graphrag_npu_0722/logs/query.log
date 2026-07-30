@@ -1,0 +1,351 @@
+2026-07-23 06:29:29.0149 - WARNING - graphrag.query.context_builder.community_context - Warning: No community records added when building community context.
+2026-07-23 06:29:29.0160 - WARNING - graphrag.query.structured_search.local_search.mixed_context - Reached token limit - reverting to previous context state
+2026-07-23 06:29:58.0026 - INFO - graphrag_llm.metrics.log_metrics_writer - Metrics for openai/embed-gemma-300m-FLM: {
+  "attempted_request_count": 1,
+  "successful_response_count": 1,
+  "failed_response_count": 0,
+  "failure_rate": 0.0,
+  "requests_with_retries": 0,
+  "retries": 0,
+  "retry_rate": 0.0,
+  "compute_duration_seconds": 2.6177005767822266,
+  "compute_duration_per_response_seconds": 2.6177005767822266,
+  "cache_hit_rate": 0.0,
+  "streaming_responses": 0,
+  "tokens_per_response": 0.0,
+  "cost_per_response": 0.0
+}
+2026-07-23 06:29:58.0026 - INFO - graphrag_llm.metrics.log_metrics_writer - Metrics for openai/qwen3-it-4b-FLM: {
+  "attempted_request_count": 1,
+  "successful_response_count": 1,
+  "failed_response_count": 0,
+  "failure_rate": 0.0,
+  "requests_with_retries": 0,
+  "retries": 0,
+  "retry_rate": 0.0,
+  "compute_duration_seconds": 0,
+  "compute_duration_per_response_seconds": 0.0,
+  "cache_hit_rate": 0.0,
+  "streaming_responses": 1,
+  "tokens_per_response": 0.0,
+  "cost_per_response": 0.0
+}
+2026-07-23 06:33:49.0134 - WARNING - graphrag.query.context_builder.community_context - Warning: No community records added when building community context.
+2026-07-23 06:33:49.0143 - WARNING - graphrag.query.structured_search.local_search.mixed_context - Reached token limit - reverting to previous context state
+2026-07-23 06:34:12.0089 - INFO - graphrag_llm.metrics.log_metrics_writer - Metrics for openai/embed-gemma-300m-FLM: {
+  "attempted_request_count": 1,
+  "successful_response_count": 1,
+  "failed_response_count": 0,
+  "failure_rate": 0.0,
+  "requests_with_retries": 0,
+  "retries": 0,
+  "retry_rate": 0.0,
+  "compute_duration_seconds": 3.0792086124420166,
+  "compute_duration_per_response_seconds": 3.0792086124420166,
+  "cache_hit_rate": 0.0,
+  "streaming_responses": 0,
+  "tokens_per_response": 0.0,
+  "cost_per_response": 0.0
+}
+2026-07-23 06:34:12.0089 - INFO - graphrag_llm.metrics.log_metrics_writer - Metrics for openai/qwen3-it-4b-FLM: {
+  "attempted_request_count": 1,
+  "successful_response_count": 1,
+  "failed_response_count": 0,
+  "failure_rate": 0.0,
+  "requests_with_retries": 0,
+  "retries": 0,
+  "retry_rate": 0.0,
+  "compute_duration_seconds": 0,
+  "compute_duration_per_response_seconds": 0.0,
+  "cache_hit_rate": 0.0,
+  "streaming_responses": 1,
+  "tokens_per_response": 0.0,
+  "cost_per_response": 0.0
+}
+2026-07-23 06:37:14.0396 - WARNING - graphrag.query.context_builder.community_context - Warning: No community records added when building community context.
+2026-07-23 06:37:14.0396 - WARNING - graphrag.query.structured_search.local_search.mixed_context - Reached token limit - reverting to previous context state
+2026-07-23 06:37:48.0366 - INFO - graphrag_llm.metrics.log_metrics_writer - Metrics for openai/embed-gemma-300m-FLM: {
+  "attempted_request_count": 1,
+  "successful_response_count": 1,
+  "failed_response_count": 0,
+  "failure_rate": 0.0,
+  "requests_with_retries": 0,
+  "retries": 0,
+  "retry_rate": 0.0,
+  "compute_duration_seconds": 2.821908712387085,
+  "compute_duration_per_response_seconds": 2.821908712387085,
+  "cache_hit_rate": 0.0,
+  "streaming_responses": 0,
+  "tokens_per_response": 0.0,
+  "cost_per_response": 0.0
+}
+2026-07-23 06:37:48.0367 - INFO - graphrag_llm.metrics.log_metrics_writer - Metrics for openai/qwen3-it-4b-FLM: {
+  "attempted_request_count": 1,
+  "successful_response_count": 1,
+  "failed_response_count": 0,
+  "failure_rate": 0.0,
+  "requests_with_retries": 0,
+  "retries": 0,
+  "retry_rate": 0.0,
+  "compute_duration_seconds": 0,
+  "compute_duration_per_response_seconds": 0.0,
+  "cache_hit_rate": 0.0,
+  "streaming_responses": 1,
+  "tokens_per_response": 0.0,
+  "cost_per_response": 0.0
+}
+2026-07-23 06:42:45.0702 - WARNING - graphrag.query.context_builder.community_context - Warning: No community records added when building community context.
+2026-07-23 06:42:45.0707 - WARNING - graphrag.query.structured_search.local_search.mixed_context - Reached token limit - reverting to previous context state
+2026-07-23 06:43:11.0863 - INFO - graphrag_llm.metrics.log_metrics_writer - Metrics for openai/embed-gemma-300m-FLM: {
+  "attempted_request_count": 1,
+  "successful_response_count": 1,
+  "failed_response_count": 0,
+  "failure_rate": 0.0,
+  "requests_with_retries": 0,
+  "retries": 0,
+  "retry_rate": 0.0,
+  "compute_duration_seconds": 3.6030750274658203,
+  "compute_duration_per_response_seconds": 3.6030750274658203,
+  "cache_hit_rate": 0.0,
+  "streaming_responses": 0,
+  "tokens_per_response": 0.0,
+  "cost_per_response": 0.0
+}
+2026-07-23 06:43:11.0863 - INFO - graphrag_llm.metrics.log_metrics_writer - Metrics for openai/qwen3-it-4b-FLM: {
+  "attempted_request_count": 1,
+  "successful_response_count": 1,
+  "failed_response_count": 0,
+  "failure_rate": 0.0,
+  "requests_with_retries": 0,
+  "retries": 0,
+  "retry_rate": 0.0,
+  "compute_duration_seconds": 0,
+  "compute_duration_per_response_seconds": 0.0,
+  "cache_hit_rate": 0.0,
+  "streaming_responses": 1,
+  "tokens_per_response": 0.0,
+  "cost_per_response": 0.0
+}
+2026-07-23 06:43:33.0388 - WARNING - graphrag.query.context_builder.community_context - Warning: No community records added when building community context.
+2026-07-23 06:43:33.0388 - WARNING - graphrag.query.structured_search.local_search.mixed_context - Reached token limit - reverting to previous context state
+2026-07-23 06:45:38.0561 - INFO - graphrag_llm.metrics.log_metrics_writer - Metrics for openai/embed-gemma-300m-FLM: {
+  "attempted_request_count": 1,
+  "successful_response_count": 1,
+  "failed_response_count": 0,
+  "failure_rate": 0.0,
+  "requests_with_retries": 0,
+  "retries": 0,
+  "retry_rate": 0.0,
+  "compute_duration_seconds": 2.3882126808166504,
+  "compute_duration_per_response_seconds": 2.3882126808166504,
+  "cache_hit_rate": 0.0,
+  "streaming_responses": 0,
+  "tokens_per_response": 0.0,
+  "cost_per_response": 0.0
+}
+2026-07-23 06:45:38.0592 - INFO - graphrag_llm.metrics.log_metrics_writer - Metrics for openai/qwen3-it-4b-FLM: {
+  "attempted_request_count": 1,
+  "successful_response_count": 1,
+  "failed_response_count": 0,
+  "failure_rate": 0.0,
+  "requests_with_retries": 0,
+  "retries": 0,
+  "retry_rate": 0.0,
+  "compute_duration_seconds": 0,
+  "compute_duration_per_response_seconds": 0.0,
+  "cache_hit_rate": 0.0,
+  "streaming_responses": 1,
+  "tokens_per_response": 0.0,
+  "cost_per_response": 0.0
+}
+2026-07-23 06:46:11.0340 - WARNING - graphrag.query.context_builder.community_context - Warning: No community records added when building community context.
+2026-07-23 06:46:11.0340 - WARNING - graphrag.query.structured_search.local_search.mixed_context - Reached token limit - reverting to previous context state
+2026-07-23 06:46:49.0363 - INFO - graphrag_llm.metrics.log_metrics_writer - Metrics for openai/embed-gemma-300m-FLM: {
+  "attempted_request_count": 1,
+  "successful_response_count": 1,
+  "failed_response_count": 0,
+  "failure_rate": 0.0,
+  "requests_with_retries": 0,
+  "retries": 0,
+  "retry_rate": 0.0,
+  "compute_duration_seconds": 3.0616002082824707,
+  "compute_duration_per_response_seconds": 3.0616002082824707,
+  "cache_hit_rate": 0.0,
+  "streaming_responses": 0,
+  "tokens_per_response": 0.0,
+  "cost_per_response": 0.0
+}
+2026-07-23 06:46:49.0369 - INFO - graphrag_llm.metrics.log_metrics_writer - Metrics for openai/qwen3-it-4b-FLM: {
+  "attempted_request_count": 1,
+  "successful_response_count": 1,
+  "failed_response_count": 0,
+  "failure_rate": 0.0,
+  "requests_with_retries": 0,
+  "retries": 0,
+  "retry_rate": 0.0,
+  "compute_duration_seconds": 0,
+  "compute_duration_per_response_seconds": 0.0,
+  "cache_hit_rate": 0.0,
+  "streaming_responses": 1,
+  "tokens_per_response": 0.0,
+  "cost_per_response": 0.0
+}
+2026-07-23 06:47:21.0447 - WARNING - graphrag.query.context_builder.community_context - Warning: No community records added when building community context.
+2026-07-23 06:47:21.0447 - WARNING - graphrag.query.structured_search.local_search.mixed_context - Reached token limit - reverting to previous context state
+2026-07-23 06:48:06.0577 - INFO - graphrag_llm.metrics.log_metrics_writer - Metrics for openai/embed-gemma-300m-FLM: {
+  "attempted_request_count": 1,
+  "successful_response_count": 1,
+  "failed_response_count": 0,
+  "failure_rate": 0.0,
+  "requests_with_retries": 0,
+  "retries": 0,
+  "retry_rate": 0.0,
+  "compute_duration_seconds": 3.5202267169952393,
+  "compute_duration_per_response_seconds": 3.5202267169952393,
+  "cache_hit_rate": 0.0,
+  "streaming_responses": 0,
+  "tokens_per_response": 0.0,
+  "cost_per_response": 0.0
+}
+2026-07-23 06:48:06.0581 - INFO - graphrag_llm.metrics.log_metrics_writer - Metrics for openai/qwen3-it-4b-FLM: {
+  "attempted_request_count": 1,
+  "successful_response_count": 1,
+  "failed_response_count": 0,
+  "failure_rate": 0.0,
+  "requests_with_retries": 0,
+  "retries": 0,
+  "retry_rate": 0.0,
+  "compute_duration_seconds": 0,
+  "compute_duration_per_response_seconds": 0.0,
+  "cache_hit_rate": 0.0,
+  "streaming_responses": 1,
+  "tokens_per_response": 0.0,
+  "cost_per_response": 0.0
+}
+2026-07-23 06:48:37.0976 - WARNING - graphrag.query.context_builder.community_context - Warning: No community records added when building community context.
+2026-07-23 06:48:37.0986 - WARNING - graphrag.query.structured_search.local_search.mixed_context - Reached token limit - reverting to previous context state
+2026-07-23 06:50:38.0022 - INFO - graphrag_llm.metrics.log_metrics_writer - Metrics for openai/embed-gemma-300m-FLM: {
+  "attempted_request_count": 1,
+  "successful_response_count": 1,
+  "failed_response_count": 0,
+  "failure_rate": 0.0,
+  "requests_with_retries": 0,
+  "retries": 0,
+  "retry_rate": 0.0,
+  "compute_duration_seconds": 3.086862802505493,
+  "compute_duration_per_response_seconds": 3.086862802505493,
+  "cache_hit_rate": 0.0,
+  "streaming_responses": 0,
+  "tokens_per_response": 0.0,
+  "cost_per_response": 0.0
+}
+2026-07-23 06:50:38.0034 - INFO - graphrag_llm.metrics.log_metrics_writer - Metrics for openai/qwen3-it-4b-FLM: {
+  "attempted_request_count": 1,
+  "successful_response_count": 1,
+  "failed_response_count": 0,
+  "failure_rate": 0.0,
+  "requests_with_retries": 0,
+  "retries": 0,
+  "retry_rate": 0.0,
+  "compute_duration_seconds": 0,
+  "compute_duration_per_response_seconds": 0.0,
+  "cache_hit_rate": 0.0,
+  "streaming_responses": 1,
+  "tokens_per_response": 0.0,
+  "cost_per_response": 0.0
+}
+2026-07-23 06:55:38.0035 - WARNING - graphrag.query.context_builder.community_context - Warning: No community records added when building community context.
+2026-07-23 06:55:38.0039 - WARNING - graphrag.query.structured_search.local_search.mixed_context - Reached token limit - reverting to previous context state
+2026-07-23 06:56:05.0818 - INFO - graphrag_llm.metrics.log_metrics_writer - Metrics for openai/embed-gemma-300m-FLM: {
+  "attempted_request_count": 1,
+  "successful_response_count": 1,
+  "failed_response_count": 0,
+  "failure_rate": 0.0,
+  "requests_with_retries": 0,
+  "retries": 0,
+  "retry_rate": 0.0,
+  "compute_duration_seconds": 2.7685561180114746,
+  "compute_duration_per_response_seconds": 2.7685561180114746,
+  "cache_hit_rate": 0.0,
+  "streaming_responses": 0,
+  "tokens_per_response": 0.0,
+  "cost_per_response": 0.0
+}
+2026-07-23 06:56:05.0827 - INFO - graphrag_llm.metrics.log_metrics_writer - Metrics for openai/qwen3-it-4b-FLM: {
+  "attempted_request_count": 1,
+  "successful_response_count": 1,
+  "failed_response_count": 0,
+  "failure_rate": 0.0,
+  "requests_with_retries": 0,
+  "retries": 0,
+  "retry_rate": 0.0,
+  "compute_duration_seconds": 0,
+  "compute_duration_per_response_seconds": 0.0,
+  "cache_hit_rate": 0.0,
+  "streaming_responses": 1,
+  "tokens_per_response": 0.0,
+  "cost_per_response": 0.0
+}
+2026-07-23 07:36:09.0521 - WARNING - graphrag.query.context_builder.community_context - Warning: No community records added when building community context.
+2026-07-23 07:36:09.0529 - WARNING - graphrag.query.structured_search.local_search.mixed_context - Reached token limit - reverting to previous context state
+2026-07-23 07:36:36.0008 - INFO - graphrag_llm.metrics.log_metrics_writer - Metrics for openai/embed-gemma-300m-FLM: {
+  "attempted_request_count": 1,
+  "successful_response_count": 1,
+  "failed_response_count": 0,
+  "failure_rate": 0.0,
+  "requests_with_retries": 0,
+  "retries": 0,
+  "retry_rate": 0.0,
+  "compute_duration_seconds": 3.0048983097076416,
+  "compute_duration_per_response_seconds": 3.0048983097076416,
+  "cache_hit_rate": 0.0,
+  "streaming_responses": 0,
+  "tokens_per_response": 0.0,
+  "cost_per_response": 0.0
+}
+2026-07-23 07:36:36.0008 - INFO - graphrag_llm.metrics.log_metrics_writer - Metrics for openai/qwen3-it-4b-FLM: {
+  "attempted_request_count": 1,
+  "successful_response_count": 1,
+  "failed_response_count": 0,
+  "failure_rate": 0.0,
+  "requests_with_retries": 0,
+  "retries": 0,
+  "retry_rate": 0.0,
+  "compute_duration_seconds": 0,
+  "compute_duration_per_response_seconds": 0.0,
+  "cache_hit_rate": 0.0,
+  "streaming_responses": 1,
+  "tokens_per_response": 0.0,
+  "cost_per_response": 0.0
+}
+2026-07-23 07:53:05.0317 - WARNING - graphrag.query.context_builder.community_context - Warning: No community records added when building community context.
+2026-07-23 07:53:32.0850 - INFO - graphrag_llm.metrics.log_metrics_writer - Metrics for openai/embed-gemma-300m-FLM: {
+  "attempted_request_count": 1,
+  "successful_response_count": 1,
+  "failed_response_count": 0,
+  "failure_rate": 0.0,
+  "requests_with_retries": 0,
+  "retries": 0,
+  "retry_rate": 0.0,
+  "compute_duration_seconds": 3.1149237155914307,
+  "compute_duration_per_response_seconds": 3.1149237155914307,
+  "cache_hit_rate": 0.0,
+  "streaming_responses": 0,
+  "tokens_per_response": 0.0,
+  "cost_per_response": 0.0
+}
+2026-07-23 07:53:32.0851 - INFO - graphrag_llm.metrics.log_metrics_writer - Metrics for openai/qwen3-it-4b-FLM: {
+  "attempted_request_count": 1,
+  "successful_response_count": 1,
+  "failed_response_count": 0,
+  "failure_rate": 0.0,
+  "requests_with_retries": 0,
+  "retries": 0,
+  "retry_rate": 0.0,
+  "compute_duration_seconds": 0,
+  "compute_duration_per_response_seconds": 0.0,
+  "cache_hit_rate": 0.0,
+  "streaming_responses": 1,
+  "tokens_per_response": 0.0,
+  "cost_per_response": 0.0
+}
