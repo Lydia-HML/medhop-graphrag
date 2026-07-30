@@ -56,8 +56,6 @@ Embed-Gemma 300M 建立向量索引
 | `medhop_tools.py` | 其他問答、評估與 Neo4j 輔助函式；不屬於本次標準 indexing 必要流程 |
 | `utils_1.py` | OpenAI、Neo4j、token 等輔助函式；不屬於本次標準 indexing 必要流程 |
 
-> 注意：0722 的結果保存在名稱含 `batch10_stable` 的資料夾；目前設定檔則指向一般的 `output`、`logs`、`cache`。重新執行後請到目前設定的路徑找結果，不要誤以為程式沒有輸出。
-
 ## 3. 執行前準備
 
 ### 3.1 硬體與軟體
