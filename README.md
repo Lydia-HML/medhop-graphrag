@@ -1,82 +1,78 @@
-# MedHop GraphRAG
+# MedHop GraphRAG 教材
 
-這是一個以 `graphrag_npu_0721/` 為核心的 Microsoft GraphRAG 教學專案。使用者會從 MedHop 生醫文本開始，自己執行 GraphRAG index，產生 entity graph、relationships、communities、community reports 與向量索引，最後再透過 GraphRAG CLI 或 Streamlit 介面查詢。
+這份專案以 `graphrag_npu_0722/` 作為主要 GraphRAG 範例，示範如何使用 Microsoft GraphRAG、MedHop 生醫多跳問答資料，以及 Lemonade / NPU OpenAI-compatible API 建立知識圖譜索引，並透過 CLI 或 Streamlit 進行查詢。
 
-目前主線如下：
+MedHop 是從 Medline/PubMed 摘要建構的生醫多跳問答資料集，題目聚焦在藥物之間的交互作用，需要跨多篇文件串接藥物與蛋白質反應鏈來推理答案。這很適合作為 GraphRAG 教材，因為它能展示「從文字抽取實體關係，再用圖譜輔助多跳查詢」的流程。
+
+本版主軸只保留 GraphRAG 流程，Streamlit 介面會呼叫 GraphRAG CLI，不另外混用其他檢索管線。
+
+## 教材資源
+
+- 教學簡報：[AMD AIPC MedHop GraphRAG](https://gamma.app/docs/AMD-AIPC-MedHop-GraphRAG--ck9fdgg1feyy6u1?mode=doc)
+- Demo 影片：[YouTube Demo](https://youtu.be/n04f6Txv7yU)
 
 ```text
-MedHop 生醫文本
-  -> GraphRAG input/
-  -> graphrag index
-  -> output/ indexed artifacts
-  -> graphrag query
-  -> Streamlit 問答介面
+MedHop text
+-> graphrag_npu_0722/input/
+-> graphrag index
+-> graphrag_npu_0722/output/
+-> graphrag query
+-> Streamlit UI
 ```
-
-本專案主流程是 Microsoft GraphRAG。傳統 Vector RAG / ChromaDB 查詢流程已移除，避免和 GraphRAG 架構混在一起。
 
 ## 快速啟動
 
-### 1. 進入專案資料夾
+### 1. 進入專案
 
 ```powershell
 cd "C:\Users\labpc\OneDrive\文件\Medhop\medhop-graphrag"
 ```
 
-### 2. 安裝套件
+### 2. 建立環境並安裝套件
 
 ```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 ```
 
-### 3. 設定 GraphRAG API Key
+### 3. 設定 API key
 
-GraphRAG CLI 需要讀取 `GRAPHRAG_API_KEY`。如果本機 Lemonade / NPU API 不檢查 key，可以先用：
+本機 Lemonade / NPU API 如果不檢查 key，可以先使用佔位值：
 
 ```powershell
 $env:GRAPHRAG_API_KEY="local"
 ```
 
-### 4. 確認本機模型 API 已啟動
+### 4. 確認本機模型 API
 
-目前 `graphrag_npu_0721/settings.yaml` 指向：
-
-```text
-http://127.0.0.1:13305/api/v1
-```
-
-使用的模型名稱：
+`graphrag_npu_0722/settings.yaml` 預設連到：
 
 ```text
-completion model: qwen3-it-4b-FLM
-embedding model: embed-gemma-300m-FLM
+API base: http://127.0.0.1:13305/api/v1
+Chat model: qwen3-it-4b-FLM
+Embedding model: embed-gemma-300m-FLM
 ```
 
-請先確認 Lemonade / NPU 的 OpenAI-compatible API server 已經啟動，且模型名稱和 `settings.yaml` 一致。
+請先確認 Lemonade 或相容的本機 OpenAI API server 已啟動，且模型名稱與設定檔一致。
 
 ### 5. 建立 GraphRAG index
 
-第一次使用，或拿到尚未包含 `output/` 的專案時，需要先執行 index：
-
 ```powershell
-graphrag index --root graphrag_npu_0721
+graphrag index --root graphrag_npu_0722
 ```
 
-這一步會呼叫 completion model 與 embedding model，時間會比查詢更久。完成後會產生：
+完成後會產生：
 
 ```text
-graphrag_npu_0721/output/
+graphrag_npu_0722/output/
 ```
 
-### 6. 用 CLI 查詢
-
-index 完成後再查詢：
+### 6. 使用 CLI 查詢
 
 ```powershell
-graphrag query --root graphrag_npu_0721 --method local "What genes are related to the disease evidence in this dataset?"
+graphrag query --root graphrag_npu_0722 --method local "What genes are related to the disease evidence in this dataset?"
 ```
-
-如果有成功輸出答案，代表 GraphRAG index、GraphRAG CLI 與本機模型 API 都已經接上。
 
 ### 7. 啟動 Streamlit 介面
 
@@ -84,550 +80,179 @@ graphrag query --root graphrag_npu_0721 --method local "What genes are related t
 python -m streamlit run app.py
 ```
 
-Streamlit 介面只是包裝 GraphRAG CLI。它查詢的是 `graphrag_npu_0721/output/` 中由 `graphrag index` 產生的 indexed artifacts。
-
-## 使用前檢查
-
-### 執行 index 前必須存在
-
-| 項目 | 路徑 |
-|---|---|
-| Streamlit app | `app.py` |
-| GraphRAG client | `src/graphrag_client.py` |
-| GraphRAG root | `graphrag_npu_0721/` |
-| GraphRAG 設定 | `graphrag_npu_0721/settings.yaml` |
-| 輸入文本 | `graphrag_npu_0721/input/` |
-| Prompt templates | `graphrag_npu_0721/prompts/` |
-| 套件清單 | `requirements.txt` |
-
-### 執行 index 後才會產生
-
-| 項目 | 路徑 |
-|---|---|
-| Documents | `graphrag_npu_0721/output/documents.parquet` |
-| Text units | `graphrag_npu_0721/output/text_units.parquet` |
-| Entities | `graphrag_npu_0721/output/entities.parquet` |
-| Relationships | `graphrag_npu_0721/output/relationships.parquet` |
-| Communities | `graphrag_npu_0721/output/communities.parquet` |
-| Community reports | `graphrag_npu_0721/output/community_reports.parquet` |
-| Graph snapshot | `graphrag_npu_0721/output/graph.graphml` |
-| Vector index | `graphrag_npu_0721/output/lancedb/` |
-
-如果 `output/` 不存在，請先執行：
-
-```powershell
-graphrag index --root graphrag_npu_0721
-```
-
-## 你會用到的三個指令
-
-### 建立 index
-
-```powershell
-graphrag index --root graphrag_npu_0721
-```
-
-### 查詢
-
-```powershell
-graphrag query --root graphrag_npu_0721 --method local "your question"
-```
-
-### 開啟網頁介面
-
-```powershell
-python -m streamlit run app.py
-```
-
-建議順序是：
-
-```text
-先 index
-再 query
-最後視需要開 Streamlit
-```
+Streamlit 會固定使用 `graphrag_npu_0722` 作為 GraphRAG root。
 
 ## 專案結構
 
-```text
-medhop-graphrag/
-|-- app.py                         # Streamlit UI，呼叫 GraphRAG CLI
-|-- requirements.txt               # Python 套件
-|-- README.md                      # 本文件
-|-- PROJECT_STRUCTURE.md           # 專案整理筆記
-|-- GRAPHRAG_QUICKSTART.md         # GraphRAG 快速筆記
-|-- explore_medhop.py              # 探索 MedHop dataset
-|-- src/
-|   |-- __init__.py
-|   `-- graphrag_client.py         # Python 呼叫 graphrag query 的 wrapper
-|-- medhop/
-|   |-- medhop.py                  # MedHop dataset script
-|   |-- bigbiohub.py
-|   `-- README.md                  # MedHop dataset card
-`-- graphrag_npu_0721/
-    |-- settings.yaml              # GraphRAG root 設定
-    |-- input/                     # GraphRAG input text
-    |-- prompts/                   # GraphRAG prompt templates
-    |-- output/                    # 執行 graphrag index 後產生
-    |-- run_graphrag_cli.py        # CLI 輔助 script
-    |-- medhop_graph_tools.py      # GraphRAG / MedHop helper
-    |-- openai_neo4j_utils.py      # OpenAI-compatible API 與 Neo4j helper
-    |-- import_to_neo4j.py         # 匯入 Neo4j 的輔助工具
-    |-- graph_visualization.png    # 圖視覺化圖片
-    `-- medhop_graphrag.ipynb      # Notebook 實驗
-```
+### 主要檔案
+
+| 路徑 | 說明 |
+|---|---|
+| `README.md` | 主要中文上手教學。 |
+| `GRAPHRAG_QUICKSTART.md` | 精簡版 GraphRAG 指令。 |
+| `PROJECT_STRUCTURE.md` | 專案檔案結構說明。 |
+| `app.py` | Streamlit 查詢介面。 |
+| `src/graphrag_client.py` | GraphRAG CLI 呼叫封裝。 |
+| `requirements.txt` | Python 套件需求。 |
+
+### GraphRAG 教材資料夾
+
+| 路徑 | 說明 |
+|---|---|
+| `graphrag_npu_0722/settings.yaml` | Microsoft GraphRAG 設定檔。 |
+| `graphrag_npu_0722/input/` | GraphRAG indexing 的輸入文字。 |
+| `graphrag_npu_0722/prompts/` | GraphRAG 使用的 prompt templates。 |
+| `graphrag_npu_0722/output/` | Indexing 後的 graph、table、vector index 產物。 |
+| `graphrag_npu_0722/evaluate_medhop.py` | MedHop multiple-choice 評估腳本。 |
+| `graphrag_npu_0722/import_to_neo4j.py` | 將 GraphRAG 產物匯入 Neo4j 的輔助腳本。 |
+| `graphrag_npu_0722/run_graphrag.py` | GraphRAG 執行輔助腳本。 |
 
 ## GraphRAG 架構介紹
 
-這個專案使用 Microsoft GraphRAG。整體流程如下：
+GraphRAG 不是只把文件切 chunk 後做向量搜尋。它會先把文件轉成圖結構，再同時使用實體、關係、社群摘要與文字片段回答問題。
+
+下圖可以搭配本段一起看：左半部是建立 index 的流程，右半部是查詢時會用到的資料結構與 GraphRAG query。
+
+![MedHop GraphRAG 架構圖](assets/architecture-graphrag.svg)
+
+圖中的流程對應到本專案如下：
+
+| 圖中階段 | 專案對應 | 說明 |
+|---|---|---|
+| MedHop | `medhop/`、`graphrag_npu_0722/input/` | MedHop 是原始生醫多跳問答資料，GraphRAG 實際讀取的是 `input/` 內的文字檔。 |
+| 文字前處理 | `explore_medhop.py`、資料整理流程 | 將資料集內容整理成適合 GraphRAG indexing 的純文字輸入。 |
+| Chunk | `settings.yaml` 的 `chunking` 設定 | GraphRAG 依照 chunk size 與 overlap 將文件切成 text units。 |
+| Qwen3 生醫圖譜抽取 | `completion_models`、`prompts/extract_graph.txt` | 使用本機 Qwen3 模型抽取 entities 與 relationships，形成知識圖譜。 |
+| Leiden 社群偵測 | `cluster_graph` | GraphRAG 在產生 community reports 之前，會先使用 Leiden community detection 將圖分群。 |
+| Community Reports | `community_reports` | 使用 LLM 針對每個 community 產生摘要報告，讓 global/local query 可以引用社群層級脈絡。 |
+| Embed-Gemma 向量化 | `embedding_models` | 使用 `embed-gemma-300m-FLM` 將文字、實體描述與 community content 向量化；此模型對應 Google EmbeddingGemma 類型的輕量文字 embedding model，官方定位是 retrieval、semantic search、RAG 等用途。 |
+| LanceDB / GraphML | `output/lancedb/`、`output/graph.graphml` | LanceDB 儲存向量索引，GraphML 保存圖結構快照。 |
+| GraphRAG Query | `graphrag query`、`app.py` | CLI 或 Streamlit 會讀取已建立好的 index，依 query method 組合圖譜與文字脈絡回答。 |
+
+Indexing 流程：
 
 ```text
-MedHop text input
-  -> chunking
-  -> entity extraction
-  -> relationship extraction
-  -> graph construction
-  -> community detection
-  -> community reports
-  -> vector indexes
-  -> GraphRAG query
+input documents
+-> token chunking
+-> entity extraction
+-> relationship extraction
+-> graph construction
+-> Leiden community detection
+-> community reports
+-> LanceDB vector indexes
 ```
 
-GraphRAG 和傳統 RAG 最大差異是：它不只是把文件切成 chunks 後做 vector search，而是先把資料整理成 entity graph，再用圖上的關係與 community reports 支援回答。
+主要演算法與元件：
 
-### Input
-
-GraphRAG 從這裡讀文字：
-
-```text
-graphrag_npu_0721/input/
-```
-
-目前共有 5 個輸入文件：
-
-```text
-doc_0000.txt
-doc_0001.txt
-doc_0002.txt
-doc_0003.txt
-doc_0004.txt
-```
-
-這些檔案會被 GraphRAG 當成原始文件來源。
-
-### Chunking
-
-設定在 `graphrag_npu_0721/settings.yaml`：
-
-```yaml
-chunking:
-  type: tokens
-  size: 450
-  overlap: 60
-  encoding_model: cl100k_base
-```
-
-| 參數 | 說明 |
+| 階段 | 說明 |
 |---|---|
-| `size: 450` | 每個 text unit 約 450 tokens |
-| `overlap: 60` | 相鄰 chunk 重疊 60 tokens |
-| `encoding_model: cl100k_base` | 用這個 tokenizer 估算 token |
+| Chunking | 將輸入文件切成 text units，讓 LLM 可以穩定處理。 |
+| Entity extraction | 使用 LLM 從 text units 抽取生醫實體。 |
+| Relationship extraction | 使用 LLM 抽取實體之間的關係與描述。 |
+| Graph construction | 將 entities 與 relationships 組成 knowledge graph。 |
+| Community detection | GraphRAG 使用 Leiden community detection 將圖分群。 |
+| Community reports | 使用 LLM 替每個 community 產生摘要報告。 |
+| Vector index | 使用 LanceDB 儲存 text units、entity descriptions、community content 等 embedding。 |
 
-執行 index 後會產生：
-
-```text
-graphrag_npu_0721/output/text_units.parquet
-```
-
-### Entity 與 Relationship 抽取
-
-GraphRAG 使用 LLM 從 text units 抽取生醫實體與關係。
-
-設定：
-
-```yaml
-extract_graph:
-  completion_model_id: default_completion_model
-  prompt: prompts/extract_graph.txt
-  entity_types:
-    - BIOMEDICAL_ENTITY
-    - GENE
-    - PROTEIN
-    - DISEASE
-    - DRUG
-    - CHEMICAL
-    - VARIANT
-    - PHENOTYPE
-    - BIOMARKER
-    - PATHWAY
-    - BIOLOGICAL_PROCESS
-    - ORGANISM
-  max_gleanings: 0
-```
-
-Entity 可以理解成圖上的節點，例如 gene、protein、disease、drug。Relationship 可以理解成節點之間的邊，例如某個 gene 和 disease 之間的關聯。
-
-執行 index 後會產生：
+Query 流程：
 
 ```text
-graphrag_npu_0721/output/entities.parquet
-graphrag_npu_0721/output/relationships.parquet
-graphrag_npu_0721/output/raw_entities.parquet
-graphrag_npu_0721/output/raw_relationships.parquet
-```
-
-### Community
-
-GraphRAG 會把 entity graph 做社群偵測。這裡的核心演算法是 Leiden community detection。
-
-Leiden 是 Louvain community detection 的改良版，用來在圖上找出連結密度高的節點群。對 GraphRAG 來說，community 可以把一群相關的藥物、疾病、基因、蛋白質或 pathway 整理成較高層次的知識單元。
-
-設定：
-
-```yaml
-cluster_graph:
-  max_cluster_size: 10
-  seed: 42
-```
-
-執行 index 後會產生：
-
-```text
-graphrag_npu_0721/output/communities.parquet
-```
-
-### Community Reports
-
-Community reports 是 GraphRAG 很重要的一層。GraphRAG 會針對每個 community 產生摘要，讓後續查詢不只看單一 chunk，而是可以看一整群相關節點的整理結果。
-
-設定：
-
-```yaml
-community_reports:
-  completion_model_id: default_completion_model
-  graph_prompt: prompts/community_report_graph.txt
-  text_prompt: prompts/community_report_text.txt
-  max_length: 600
-  max_input_length: 4000
-```
-
-執行 index 後會產生：
-
-```text
-graphrag_npu_0721/output/community_reports.parquet
-```
-
-### Vector Store
-
-GraphRAG 會建立 LanceDB 向量索引，用於 text units、entity descriptions 與 community content 的檢索。
-
-設定：
-
-```yaml
-vector_store:
-  type: lancedb
-  db_uri: output/lancedb
-  index_schema:
-    text_unit_text:
-      vector_size: 768
-    entity_description:
-      vector_size: 768
-    community_full_content:
-      vector_size: 768
-```
-
-執行 index 後會產生：
-
-```text
-graphrag_npu_0721/output/lancedb/
+question
+-> GraphRAG query method
+-> retrieve graph/text/community context
+-> local LLM API
+-> answer
 ```
 
 ## Query Method 怎麼選
 
 | Method | 適合情境 |
 |---|---|
-| `local` | 問特定 entity、gene、disease、drug、evidence |
-| `global` | 問整體趨勢、主題摘要、資料集總覽 |
-| `drift` | 從一個局部問題延伸到相關主題 |
-| `basic` | 基礎查詢，可當作對照 |
+| `local` | 具體問題，例如某個 gene、drug、disease、evidence 之間的關係。 |
+| `global` | 想總結整份資料的主題、趨勢或大型關係模式。 |
+| `drift` | 從問題出發，沿著相關實體與 community 擴展脈絡。 |
+| `basic` | 較單純的文字與向量脈絡查詢。 |
 
-建議新手先這樣用：
+教材示範建議先使用 `local`，因為 MedHop 題目通常需要在局部生醫實體關係中找證據。
 
-```text
-特定生醫問題 -> local
-整體資料摘要 -> global
-不知道該用哪個 -> local
-```
+## MedHop 評估設計提醒
 
-## 微調數值介紹
+MedHop 原始任務是 multiple-choice QA：題目通常會給定一個查詢與多個候選答案，系統需要跨文件推理後選出正解，最後用 exact match 評分。
 
-以下參數都在：
+GraphRAG 原本更偏向 query-focused summarization，也就是針對開放式問題組合圖譜、社群摘要與文字脈絡後生成答案。因此做 MedHop 評估時，不應只看模型自由生成的長答案，而要明確設計「候選答案選擇」流程：
 
-```text
-graphrag_npu_0721/settings.yaml
-```
+1. 對每個候選答案建立同格式 prompt，要求模型只輸出候選選項或答案字串。
+2. 使用 `local` 或 `drift` 查詢補足多跳證據，再讓模型在候選答案中做選擇。
+3. 將輸出正規化後再和標準答案做 exact match。
+4. 保留 GraphRAG 回答與引用脈絡，方便檢查錯誤是來自 retrieval、圖譜抽取、community report，還是最後選項判斷。
 
-### 1. 併發數
+## 重要參數微調
 
-```yaml
-concurrent_requests: 1
-```
+設定檔位於 `graphrag_npu_0722/settings.yaml`。
 
-| 數值 | 說明 |
-|---:|---|
-| `1` | 最穩，適合本機 NPU / Lemonade |
-| `2` 以上 | 可能加快，但也可能造成 API 壓力 |
-
-建議新手先維持 `1`。
-
-### 2. Completion Model
-
-```yaml
-completion_models:
-  default_completion_model:
-    type: litellm
-    model_provider: openai
-    model: qwen3-it-4b-FLM
-    api_base: http://127.0.0.1:13305/api/v1
-    call_args:
-      temperature: 0
-      timeout: 300
-```
-
-| 參數 | 目前值 | 說明 |
+| 參數 | 目前值 | 調整方向 |
 |---|---|---|
-| `model` | `qwen3-it-4b-FLM` | 生成模型 |
-| `temperature` | `0` | 輸出穩定度 |
-| `timeout` | `300` | 單次呼叫等待秒數 |
+| `concurrent_requests` | `1` | NPU 或本機模型不穩時維持 1；硬體較強時可逐步增加。 |
+| `chunking.size` | `450` | 越大保留越多上下文，但抽取成本與錯誤風險會增加。 |
+| `chunking.overlap` | `60` | 避免跨 chunk 資訊斷裂；太高會增加索引成本。 |
+| `completion model` | `qwen3-it-4b-FLM` | 負責抽取、摘要與回答。 |
+| `embedding model` | `embed-gemma-300m-FLM` | 負責向量化文字與圖譜描述。 |
+| `vector_size` | `768` | 必須與 embedding model 輸出維度一致。 |
+| `top_k_entities` | `6` | Local search 取回的相關實體數。 |
+| `top_k_relationships` | `20` | Local search 取回的關係數；多跳問題可適度提高。 |
+| `max_context_tokens` | `2400` | 回答時可使用的上下文長度；太高會增加延遲。 |
 
-建圖建議維持 `temperature: 0`，輸出會比較穩定。
+## 重新跑 Index 前要檢查什麼
 
-### 3. Embedding Model 與 Vector Size
+1. `graphrag_npu_0722/input/` 內是否有要索引的文字檔。
+2. Lemonade / NPU API 是否已啟動。
+3. `settings.yaml` 的 `api_base`、模型名稱、embedding 維度是否正確。
+4. `GRAPHRAG_API_KEY` 是否已設定。
+5. 若要完全重建結果，可先移除舊的 `output/`、`cache/`、`logs/` 後再執行 `graphrag index`。
 
-```yaml
-embedding_models:
-  default_embedding_model:
-    model: embed-gemma-300m-FLM
+## 評估腳本
+
+0722 資料夾內含 MedHop multiple-choice 評估腳本：
+
+```powershell
+python graphrag_npu_0722/evaluate_medhop.py --method local --limit 5
 ```
 
-```yaml
-vector_store:
-  index_schema:
-    text_unit_text:
-      vector_size: 768
-    entity_description:
-      vector_size: 768
-    community_full_content:
-      vector_size: 768
+輸出檔案：
+
+```text
+graphrag_npu_0722/medhop_evaluation.csv
 ```
-
-| 參數 | 說明 |
-|---|---|
-| `embed-gemma-300m-FLM` | embedding model |
-| `vector_size: 768` | 必須等於 embedding model 的輸出維度 |
-
-如果換 embedding model，一定要確認 vector size 是否相同，並重新執行 index。
-
-### 4. Chunk 大小
-
-```yaml
-chunking:
-  size: 450
-  overlap: 60
-```
-
-| 調整方向 | 可能影響 |
-|---|---|
-| 增加 `size` | 單一 chunk 上下文更多，但 LLM 負擔增加 |
-| 減少 `size` | chunk 更細，但關係可能被切散 |
-| 增加 `overlap` | 降低重要資訊被切斷的機率，但資料量變多 |
-
-新手建議先不要動。若關係抽得太碎，可試：
-
-```yaml
-size: 600
-overlap: 80
-```
-
-### 5. Entity Types
-
-```yaml
-entity_types:
-  - BIOMEDICAL_ENTITY
-  - GENE
-  - PROTEIN
-  - DISEASE
-  - DRUG
-  - CHEMICAL
-  - VARIANT
-  - PHENOTYPE
-  - BIOMARKER
-  - PATHWAY
-  - BIOLOGICAL_PROCESS
-  - ORGANISM
-```
-
-MedHop 是 biomedical multi-hop QA，所以 `GENE`、`PROTEIN`、`DISEASE`、`DRUG` 通常要保留。
-
-### 6. max_gleanings
-
-```yaml
-extract_graph:
-  max_gleanings: 0
-```
-
-`max_gleanings` 控制 GraphRAG 是否追加抽取更多 entities / relationships。
-
-| 數值 | 說明 |
-|---:|---|
-| `0` | 最快、最穩 |
-| `1` | 可能抽更多關係 |
-| `2` 以上 | 可能增加召回，但本機模型壓力大 |
-
-目前設為 `0` 是為了本機 NPU 穩定。
-
-### 7. Community 大小
-
-```yaml
-cluster_graph:
-  max_cluster_size: 10
-```
-
-| 調整方向 | 可能影響 |
-|---|---|
-| 變小 | community 更細，局部關係更明確 |
-| 變大 | community 更概括，global summary 可能更完整 |
-
-### 8. Community Report 長度
-
-```yaml
-community_reports:
-  max_length: 600
-  max_input_length: 4000
-```
-
-| 參數 | 目前值 | 說明 |
-|---|---:|---|
-| `max_length` | `600` | 報告輸出長度 |
-| `max_input_length` | `4000` | 產生報告時可讀的上下文 |
-
-### 9. Local Search
-
-```yaml
-local_search:
-  max_context_tokens: 2400
-  top_k_entities: 6
-  top_k_relationships: 8
-```
-
-| 參數 | 說明 |
-|---|---|
-| `max_context_tokens` | 查詢時塞給 LLM 的 context 上限 |
-| `top_k_entities` | 取回相關 entities 的數量 |
-| `top_k_relationships` | 取回相關 relationships 的數量 |
-
-如果回答太短或找不到資訊，可以小幅提高 `top_k_entities` 或 `top_k_relationships`，然後重新查詢。這類 query 參數通常不需要重新 index。
-
-### 10. Global Search
-
-```yaml
-global_search:
-  max_context_tokens: 2400
-```
-
-Global search 更適合問整體摘要。若模型常常回空或超時，可以降低 `max_context_tokens`；若模型能力足夠，可以提高。
 
 ## 常見問題
 
-### Q1. Streamlit 查詢失敗怎麼辦？
+### 查詢失敗
 
-先確認：
+請依序確認：
 
-1. Lemonade / NPU API server 是否啟動。
-2. `GRAPHRAG_API_KEY` 是否設定。
-3. `graphrag` 指令是否可執行。
-4. 是否已先執行 `graphrag index --root graphrag_npu_0721`。
-5. `graphrag_npu_0721/output/` 是否已產生。
-6. `settings.yaml` 的 model name 是否和 API server 註冊名稱一致。
+1. Lemonade / NPU API 是否正在執行。
+2. `GRAPHRAG_API_KEY` 是否已設定。
+3. `graphrag` CLI 是否安裝在目前 Python 環境。
+4. `graphrag_npu_0722/output/` 是否已建立。
+5. `settings.yaml` 的模型名稱是否與本機 API 提供的名稱一致。
 
-### Q2. 什麼時候要重新 index？
+### 改了 input 後需要重跑 index 嗎？
 
-下列情況需要重新 index：
-
-1. 第一次使用，專案還沒有 `output/`。
-2. 修改 `input/` 文字。
-3. 修改 prompt。
-4. 修改 entity types。
-5. 換 completion model。
-6. 換 embedding model。
-7. 修改 chunking、entity extraction、community 或 embedding 設定。
-
-只是問新問題，不需要重新 index。
-
-### Q3. 換 embedding model 後壞掉？
-
-請確認：
-
-1. 新 embedding model 的輸出維度。
-2. `vector_size` 是否同步修改。
-3. 舊的 `output/lancedb/` 是否需要重建。
-4. 是否已重新執行 `graphrag index --root graphrag_npu_0721`。
-
-### Q4. 可以先刪掉 output 讓使用者自己跑嗎？
-
-可以。只要保留 `settings.yaml`、`input/`、`prompts/` 與必要程式碼，使用者就能重新執行：
+需要。GraphRAG 的 entities、relationships、communities、community reports 與 LanceDB 都是 indexing 的產物。只要輸入文件、prompt、模型或 chunking 設定有變，就建議重新執行：
 
 ```powershell
-graphrag index --root graphrag_npu_0721
+graphrag index --root graphrag_npu_0722
 ```
 
-完成後再查詢：
-
-```powershell
-graphrag query --root graphrag_npu_0721 --method local "your question"
-```
-
-## Neo4j 輔助工具
-
-Neo4j 不是本專案的 GraphRAG 核心，只是用來承接 GraphRAG outputs 做查圖或視覺化。
-
-相關檔案：
-
-```text
-graphrag_npu_0721/import_to_neo4j.py
-graphrag_npu_0721/openai_neo4j_utils.py
-graphrag_npu_0721/medhop_graph_tools.py
-```
-
-GraphRAG 會先產生 parquet / LanceDB / GraphML，之後才視需求匯入 Neo4j。
-
-## 一句話總結
-
-新手使用時，只要記住這條主線：
-
-```text
-啟動 Lemonade / NPU API
--> 設定 GRAPHRAG_API_KEY
--> graphrag index --root graphrag_npu_0721
--> graphrag query --root graphrag_npu_0721
--> 或 python -m streamlit run app.py
-```
-
-## 設備與環境要求
-
-### 必要
+## 設備需求
 
 | 項目 | 建議 |
 |---|---|
+| OS | Windows 11 |
 | Python | 3.10 或 3.11 |
-| GraphRAG CLI | `graphrag` 指令需可執行 |
-| Lemonade / NPU API | OpenAI-compatible API server |
+| GraphRAG CLI | `graphrag` |
+| Local API | Lemonade / NPU OpenAI-compatible API |
 | Completion model | `qwen3-it-4b-FLM` |
 | Embedding model | `embed-gemma-300m-FLM` |
-| Embedding vector size | `768` |
-
-### 目前設定的 API endpoint
-
-```text
-http://127.0.0.1:13305/api/v1
-```
+| Memory | 至少 16 GB RAM，較大資料建議 32 GB 以上。 |
+| Accelerator | 支援本機 LLM 推論的 AMD NPU / GPU 或其他相容加速環境。 |

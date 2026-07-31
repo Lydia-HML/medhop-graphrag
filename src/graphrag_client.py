@@ -4,13 +4,13 @@ from pathlib import Path
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-GRAPHRAG_ROOT = PROJECT_ROOT / "graphrag_npu_0721"
+GRAPHRAG_ROOT = PROJECT_ROOT / "graphrag_npu_0722"
 
 GRAPHRAG_METHODS = ("local", "global", "drift", "basic")
 
 
 def run_graphrag_query(method: str, question: str, api_key: str | None = None) -> str:
-    """Run Microsoft GraphRAG CLI query against graphrag_npu_0721."""
+    """Run Microsoft GraphRAG CLI query against graphrag_npu_0722."""
     if method not in GRAPHRAG_METHODS:
         raise ValueError(f"Unsupported GraphRAG query method: {method}")
 

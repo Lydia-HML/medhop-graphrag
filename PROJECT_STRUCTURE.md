@@ -1,71 +1,71 @@
-﻿# MedHop GraphRAG Project Structure
+# MedHop GraphRAG Project Structure
 
-This repository is now centered on `graphrag_npu_0721/` as the main GraphRAG path:
-
-1. Microsoft GraphRAG-style indexing/querying over the MedHop biomedical multi-hop QA dataset.
-2. A Streamlit app that calls `graphrag query --root graphrag_npu_0721`.
+本專案目前以 `graphrag_npu_0722/` 作為主要 GraphRAG 教材與執行資料夾，搭配 Streamlit 介面示範如何查詢已建立好的 MedHop biomedical knowledge graph。
 
 ## Top-Level Files
 
 | Path | Purpose |
 | --- | --- |
-| `app.py` | Streamlit app that calls GraphRAG CLI over `graphrag_npu_0721`. |
-| `requirements.txt` | Python dependencies. Note that this file currently mixes app dependencies, GraphRAG dependencies, and generated environment packages. |
-| `README.md` | Main Chinese project readme. |
-| `explore_medhop.py` | Utility script to load and inspect the MedHop dataset. |
-| `GRAPHRAG_QUICKSTART.md` | Quickstart for indexing/querying `graphrag_npu_0721`. |
+| `README.md` | 主要中文上手教學，包含快速啟動、架構介紹、參數微調與設備需求。 |
+| `GRAPHRAG_QUICKSTART.md` | 精簡版 GraphRAG CLI 快速指令。 |
+| `app.py` | Streamlit 查詢介面，透過 `src/graphrag_client.py` 呼叫 GraphRAG CLI。 |
+| `requirements.txt` | Python 套件需求。 |
+| `explore_medhop.py` | MedHop 資料集檢查工具。 |
 
 ## App Code
 
 | Path | Purpose |
 | --- | --- |
-| `src/graphrag_client.py` | Wraps `graphrag query --root graphrag_npu_0721` for the Streamlit app. |
+| `src/graphrag_client.py` | 封裝 `graphrag query --root graphrag_npu_0722`，供 Streamlit app 使用。 |
 
 ## MedHop Dataset
 
 | Path | Purpose |
 | --- | --- |
-| `medhop/README.md` | Dataset card for MedHop. |
-| `medhop/medhop.py` | Hugging Face datasets loader for MedHop. |
-| `medhop/bigbiohub.py` | BigBio schema helpers used by the dataset loader. |
-| `medhop/.env.example` | Example environment file. |
+| `medhop/README.md` | MedHop dataset card。 |
+| `medhop/medhop.py` | Hugging Face datasets loader。 |
+| `medhop/bigbiohub.py` | BigBio schema helper。 |
+| `medhop/.env.example` | 環境變數範例。 |
 
-## GraphRAG Runs
+## GraphRAG Root
 
 | Path | Purpose |
 | --- | --- |
-| `graphrag_npu_0721/` | GraphRAG root configured for a local NPU/Lemonade OpenAI-compatible API. |
-| `graphrag_npu_0721/settings.yaml` | GraphRAG configuration using `qwen3-it-4b-FLM` and `embed-gemma-300m-FLM`. |
-| `graphrag_npu_0721/medhop_graph_tools.py` | Helper utilities for MedHop/GraphRAG analysis. |
-| `graphrag_npu_0721/import_to_neo4j.py` | Script for importing generated graph data into Neo4j. |
-| `graphrag_npu_0721/run_graphrag_cli.py` | Small runner for GraphRAG tasks. |
-| `graphrag_npu_0721/medhop_graphrag.ipynb` | Notebook for GraphRAG experimentation. |
-| `graphrag_npu_0721/output/` | Generated GraphRAG outputs, including entities, relationships, text units, communities, and graph snapshots. |
+| `graphrag_npu_0722/` | 主要 GraphRAG root，設定 Lemonade / NPU OpenAI-compatible API。 |
+| `graphrag_npu_0722/settings.yaml` | Microsoft GraphRAG 設定檔，包含模型、輸入、輸出、向量資料庫與搜尋參數。 |
+| `graphrag_npu_0722/input/` | GraphRAG indexing 的輸入文件。 |
+| `graphrag_npu_0722/prompts/` | Entity extraction、summarization、community report 等 prompt。 |
+| `graphrag_npu_0722/output/` | GraphRAG 產出的 entities、relationships、communities、community reports、LanceDB 等結果。 |
+| `graphrag_npu_0722/evaluate_medhop.py` | MedHop 評估腳本。 |
+| `graphrag_npu_0722/import_to_neo4j.py` | 將 GraphRAG 產物匯入 Neo4j 的輔助腳本。 |
+| `graphrag_npu_0722/run_graphrag.py` | GraphRAG 執行輔助腳本。 |
 
-## Generated Or Machine-Specific Content
+## Generated Or Local Content
 
-These files/directories are generated or local-environment specific and should normally not be committed in a clean project:
+這些通常是本機或重新 indexing 後產生的內容，不一定適合提交到 Git：
 
 | Path | Why |
 | --- | --- |
-| `.venv/`, `hf_venv/` | Local virtual environments. |
-| `__pycache__/`, `src/__pycache__/` | Python bytecode cache. |
-| `.DS_Store` files | macOS Finder metadata. |
-| `graphrag-*/cache*/` | GraphRAG cache data. |
-| `graphrag-*/logs*/` | GraphRAG logs. |
-| `graphrag-*/output*/` | Generated GraphRAG outputs; keep only if you need reproducible artifacts. |
+| `.venv/`, `hf_venv/`, `venv/` | 本機 Python virtual environment。 |
+| `__pycache__/` | Python bytecode cache。 |
+| `.DS_Store`, `Thumbs.db` | 作業系統 metadata。 |
+| `graphrag_*/cache*/` | GraphRAG cache。 |
+| `graphrag_*/logs*/` | GraphRAG logs。 |
+| `graphrag_*/output*/` | GraphRAG indexing/query 產物；教材若要讓使用者重跑，可不提交這類資料。 |
 
 ## Is This Microsoft GraphRAG?
 
-Yes, the GraphRAG parts use the Microsoft GraphRAG project/package style:
+是。`graphrag_npu_0722/settings.yaml` 採用 Microsoft GraphRAG 的設定結構，例如：
 
-- `requirements.txt` includes `graphrag==3.0.8` and related `graphrag-*` packages.
-- `graphrag_npu_0721/settings.yaml` uses the Microsoft GraphRAG YAML layout: `completion_models`, `embedding_models`, `input_storage`, `output_storage`, `cache`, `vector_store`, `extract_graph`, `cluster_graph`, `community_reports`, `local_search`, and `global_search`.
+- `completion_models`
+- `embedding_models`
+- `input_storage`
+- `output_storage`
+- `vector_store`
+- `extract_graph`
+- `cluster_graph`
+- `community_reports`
+- `local_search`
+- `global_search`
 
-However, the whole repository is not only the upstream Microsoft GraphRAG example. It combines:
-
-- Microsoft GraphRAG indexing/query experiments using a local NPU/Lemonade OpenAI-compatible model server,
-- MedHop dataset utilities, and
-- Neo4j import/analysis helpers.
-
-
+這份 repo 不是單純複製 upstream 範例，而是把 Microsoft GraphRAG 套到 MedHop biomedical QA 教材，並加入 Streamlit 查詢介面、NPU/Lemonade 本機模型設定與 Neo4j/評估輔助工具。

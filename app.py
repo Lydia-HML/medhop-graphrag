@@ -11,7 +11,7 @@ load_dotenv()
 st.set_page_config(page_title="MedHop GraphRAG", page_icon="GraphRAG", layout="centered")
 
 st.title("MedHop GraphRAG")
-st.caption("固定使用 Microsoft GraphRAG root：graphrag_npu_0721")
+st.caption("固定使用 Microsoft GraphRAG root：graphrag_npu_0722")
 
 with st.sidebar:
     st.header("GraphRAG CLI")
@@ -44,7 +44,7 @@ if question := st.chat_input("輸入你的問題"):
 
     with st.chat_message("assistant"):
         try:
-            with st.spinner("正在呼叫 GraphRAG CLI 查詢 graphrag_npu_0721..."):
+            with st.spinner("正在呼叫 GraphRAG CLI 查詢 graphrag_npu_0722..."):
                 response = run_graphrag_query(
                     method=graphrag_method,
                     question=question,

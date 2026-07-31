@@ -24,6 +24,12 @@ graphrag-*/logs/
 graphrag-*/logs_*/
 graphrag-*/output/
 graphrag-*/output_*/
+graphrag_*/cache/
+graphrag_*/cache_*/
+graphrag_*/logs/
+graphrag_*/logs_*/
+graphrag_*/output/
+graphrag_*/output_*/
 
 # Notebook checkpoints
 .ipynb_checkpoints/
