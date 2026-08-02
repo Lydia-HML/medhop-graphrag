@@ -1,20 +1,26 @@
-"""Run GraphRAG with certifi instead of the malformed Windows CA store."""
+"""Run GraphRAG, applying the Windows CA-store workaround only when needed."""
 
 import ssl
+import sys
 
 import certifi
 
 
-_original_create_default_context = ssl.create_default_context
+def _enable_windows_certifi_context() -> None:
+    """Use certifi only for Windows, where the system CA store can be malformed."""
+    original_create_default_context = ssl.create_default_context
 
 
-def _create_certifi_context(*args, **kwargs):
-    if not any(kwargs.get(name) is not None for name in ("cafile", "capath", "cadata")):
-        kwargs["cafile"] = certifi.where()
-    return _original_create_default_context(*args, **kwargs)
+    def create_certifi_context(*args, **kwargs):
+        if not any(kwargs.get(name) is not None for name in ("cafile", "capath", "cadata")):
+            kwargs["cafile"] = certifi.where()
+        return original_create_default_context(*args, **kwargs)
+
+    ssl.create_default_context = create_certifi_context
 
 
-ssl.create_default_context = _create_certifi_context
+if sys.platform.startswith("win"):
+    _enable_windows_certifi_context()
 
 from graphrag.cli.main import app
 
