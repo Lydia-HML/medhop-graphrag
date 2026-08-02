@@ -2,15 +2,22 @@
 
 這份 quickstart 只列最常用指令。完整教學請看 `README.md`。
 
-## 1. 啟動本機模型 API
+## Before indexing: configure a model endpoint
 
-請先確認 Lemonade / NPU OpenAI-compatible API 已在本機啟動：
+The checked-in settings target a Lemonade / NPU OpenAI-compatible API:
 
 - API base: `http://127.0.0.1:13305/api/v1`
 - Chat model: `qwen3-it-4b-FLM`
 - Embedding model: `embed-gemma-300m-FLM`
 
-## 2. 安裝套件
+Windows users can use the checked-in settings. macOS users must update the
+endpoint and model names as described in [`docs/platforms/macos.md`](docs/platforms/macos.md).
+Start the endpoint before creating the index.
+
+## 1. 安裝套件
+
+需要 Python 3.10 或 3.11。先執行 `python --version`（Windows）或
+`python3 --version`（macOS）確認版本。
 
 **Windows PowerShell**
 
@@ -28,7 +35,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## 3. 設定 API key
+## 2. 設定 API key
 
 本機 API 若不檢查 key，可使用佔位值：
 
@@ -44,7 +51,7 @@ $env:GRAPHRAG_API_KEY="local"
 export GRAPHRAG_API_KEY="local"
 ```
 
-## 4. 下載並準備 MedHop input
+## 3. 下載並準備 MedHop input
 
 MedHop 資料和衍生 input 不隨 repository 散布。請先執行：
 
@@ -53,7 +60,7 @@ python scripts/download_medhop.py
 python scripts/prepare_medhop.py
 ```
 
-## 5. 建立 GraphRAG Index
+## 4. 建立 GraphRAG Index
 
 ```text
 graphrag index --root graphrag_npu_0722
@@ -67,7 +74,7 @@ graphrag index --root graphrag_npu_0722
 - `graphrag_npu_0722/output/community_reports.parquet`
 - `graphrag_npu_0722/output/lancedb/`
 
-## 6. 查詢 GraphRAG
+## 5. 查詢 GraphRAG
 
 Local search 適合具體問題：
 
@@ -81,7 +88,7 @@ Global search 適合總結整體資料：
 graphrag query --root graphrag_npu_0722 --method global "Summarize the major biomedical relationship patterns."
 ```
 
-## 7. 啟動 Streamlit
+## 6. 啟動 Streamlit
 
 ```text
 python -m streamlit run app.py

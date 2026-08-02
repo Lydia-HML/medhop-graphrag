@@ -24,19 +24,15 @@ MedHop text
 
 ### 1. 進入專案
 
-**Windows PowerShell**
-
-```powershell
-cd "C:\Users\labpc\OneDrive\文件\Medhop\medhop-graphrag"
-```
-
-**macOS (zsh/bash)**
-
-```bash
-cd /path/to/medhop-graphrag
+```text
+git clone https://github.com/Lydia-HML/medhop-graphrag.git
+cd medhop-graphrag
 ```
 
 ### 2. 建立環境並安裝套件
+
+本專案需要 Python 3.10 或 3.11。先使用 `python --version`（Windows）或
+`python3 --version`（macOS）確認版本。
 
 **Windows PowerShell**
 
@@ -83,6 +79,20 @@ Embedding model: embed-gemma-300m-FLM
 請先確認 Lemonade 或相容的 OpenAI API server 已啟動，且模型名稱與設定檔一致。
 Windows 的 AMD NPU/Lemonade 設定與 macOS 的替代 endpoint 請分別參考
 [Windows 指南](docs/platforms/windows.md) 與 [macOS 指南](docs/platforms/macos.md)。
+
+在開始 indexing 前，可用下列指令確認 endpoint 可連線：
+
+**Windows PowerShell**
+
+```powershell
+Invoke-RestMethod http://127.0.0.1:13305/api/v1/models
+```
+
+**macOS (zsh/bash)**
+
+```bash
+curl http://127.0.0.1:13305/api/v1/models
+```
 
 ### 5. 下載並準備 MedHop 資料
 
