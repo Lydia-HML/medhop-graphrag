@@ -18,6 +18,7 @@ venv/
 Thumbs.db
 
 # GraphRAG generated artifacts
+graphrag_npu_0722/input/
 graphrag-*/cache/
 graphrag-*/cache_*/
 graphrag-*/logs/
@@ -30,6 +31,11 @@ graphrag_*/logs/
 graphrag_*/logs_*/
 graphrag_*/output/
 graphrag_*/output_*/
+graphrag_npu_0722/medhop_evaluation.csv
+
+# Downloaded datasets and locally prepared copies
+data/raw/
+data/processed/
 
 # Notebook checkpoints
 .ipynb_checkpoints/

@@ -11,6 +11,9 @@
 | `app.py` | Streamlit 查詢介面，透過 `src/graphrag_client.py` 呼叫 GraphRAG CLI。 |
 | `requirements.txt` | Python 套件需求。 |
 | `explore_medhop.py` | MedHop 資料集檢查工具。 |
+| `scripts/download_medhop.py` | 將使用者自行取得的 MedHop split 快取到本機。 |
+| `scripts/prepare_medhop.py` | 將本機 MedHop supports 轉成 GraphRAG input 文件。 |
+| `data/README.md` | MedHop 資料的授權、引用與本機準備說明。 |
 
 ## App Code
 
@@ -33,9 +36,9 @@
 | --- | --- |
 | `graphrag_npu_0722/` | 主要 GraphRAG root，設定 Lemonade / NPU OpenAI-compatible API。 |
 | `graphrag_npu_0722/settings.yaml` | Microsoft GraphRAG 設定檔，包含模型、輸入、輸出、向量資料庫與搜尋參數。 |
-| `graphrag_npu_0722/input/` | GraphRAG indexing 的輸入文件。 |
+| `graphrag_npu_0722/input/` | 從本機 MedHop 資料準備的 indexing 輸入文件；不提交至 Git。 |
 | `graphrag_npu_0722/prompts/` | Entity extraction、summarization、community report 等 prompt。 |
-| `graphrag_npu_0722/output/` | GraphRAG 產出的 entities、relationships、communities、community reports、LanceDB 等結果。 |
+| `graphrag_npu_0722/output/` | GraphRAG 產出的 entities、relationships、communities、community reports、LanceDB 等結果；不提交至 Git。 |
 | `graphrag_npu_0722/evaluate_medhop.py` | MedHop 評估腳本。 |
 | `graphrag_npu_0722/import_to_neo4j.py` | 將 GraphRAG 產物匯入 Neo4j 的輔助腳本。 |
 | `graphrag_npu_0722/run_graphrag.py` | GraphRAG 執行輔助腳本。 |
@@ -52,6 +55,7 @@
 | `graphrag_*/cache*/` | GraphRAG cache。 |
 | `graphrag_*/logs*/` | GraphRAG logs。 |
 | `graphrag_*/output*/` | GraphRAG indexing/query 產物；教材若要讓使用者重跑，可不提交這類資料。 |
+| `data/raw/`, `data/processed/` | 使用者下載的 MedHop 資料及其本機衍生副本。 |
 
 ## Is This Microsoft GraphRAG?
 

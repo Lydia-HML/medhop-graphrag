@@ -56,7 +56,19 @@ Embedding model: embed-gemma-300m-FLM
 
 請先確認 Lemonade 或相容的本機 OpenAI API server 已啟動，且模型名稱與設定檔一致。
 
-### 5. 建立 GraphRAG index
+### 5. 下載並準備 MedHop 資料
+
+MedHop 及其衍生的 GraphRAG input 不隨本 repository 散布。請先自行下載資料集，再準備本機 input：
+
+```powershell
+python scripts/download_medhop.py
+python scripts/prepare_medhop.py
+```
+
+這些指令會將原始資料存於 `data/raw/medhop/`，並把文件寫入
+`graphrag_npu_0722/input/`。兩個位置都已被 Git 忽略。
+
+### 6. 建立 GraphRAG index
 
 ```powershell
 graphrag index --root graphrag_npu_0722
@@ -68,13 +80,13 @@ graphrag index --root graphrag_npu_0722
 graphrag_npu_0722/output/
 ```
 
-### 6. 使用 CLI 查詢
+### 7. 使用 CLI 查詢
 
 ```powershell
 graphrag query --root graphrag_npu_0722 --method local "What genes are related to the disease evidence in this dataset?"
 ```
 
-### 7. 啟動 Streamlit 介面
+### 8. 啟動 Streamlit 介面
 
 ```powershell
 python -m streamlit run app.py
@@ -100,9 +112,9 @@ Streamlit 會固定使用 `graphrag_npu_0722` 作為 GraphRAG root。
 | 路徑 | 說明 |
 |---|---|
 | `graphrag_npu_0722/settings.yaml` | Microsoft GraphRAG 設定檔。 |
-| `graphrag_npu_0722/input/` | GraphRAG indexing 的輸入文字。 |
+| `graphrag_npu_0722/input/` | 本機由 MedHop 資料準備的 GraphRAG indexing 輸入文字，不隨 repository 散布。 |
 | `graphrag_npu_0722/prompts/` | GraphRAG 使用的 prompt templates。 |
-| `graphrag_npu_0722/output/` | Indexing 後的 graph、table、vector index 產物。 |
+| `graphrag_npu_0722/output/` | 本機 indexing 後的 graph、table、vector index 產物，不隨 repository 散布。 |
 | `graphrag_npu_0722/evaluate_medhop.py` | MedHop multiple-choice 評估腳本。 |
 | `graphrag_npu_0722/import_to_neo4j.py` | 將 GraphRAG 產物匯入 Neo4j 的輔助腳本。 |
 | `graphrag_npu_0722/run_graphrag.py` | GraphRAG 執行輔助腳本。 |
@@ -119,7 +131,7 @@ GraphRAG 不是只把文件切 chunk 後做向量搜尋。它會先把文件轉�
 
 | 圖中階段 | 專案對應 | 說明 |
 |---|---|---|
-| MedHop | `medhop/`、`graphrag_npu_0722/input/` | MedHop 是原始生醫多跳問答資料，GraphRAG 實際讀取的是 `input/` 內的文字檔。 |
+| MedHop | `data/raw/medhop/`、`graphrag_npu_0722/input/` | MedHop 是原始生醫多跳問答資料；使用者下載後，GraphRAG 讀取本機 `input/` 內的文字檔。 |
 | 文字前處理 | `explore_medhop.py`、資料整理流程 | 將資料集內容整理成適合 GraphRAG indexing 的純文字輸入。 |
 | Chunk | `settings.yaml` 的 `chunking` 設定 | GraphRAG 依照 chunk size 與 overlap 將文件切成 text units。 |
 | Qwen3 生醫圖譜抽取 | `completion_models`、`prompts/extract_graph.txt` | 使用本機 Qwen3 模型抽取 entities 與 relationships，形成知識圖譜。 |
@@ -256,3 +268,20 @@ graphrag index --root graphrag_npu_0722
 | Embedding model | `embed-gemma-300m-FLM` |
 | Memory | 至少 16 GB RAM，較大資料建議 32 GB 以上。 |
 | Accelerator | 支援本機 LLM 推論的 AMD NPU / GPU 或其他相容加速環境。 |
+
+## License
+
+Original source code in this repository is licensed under the Apache License
+2.0. Different terms apply to third-party datasets, model weights, runtimes,
+and educational media. In particular:
+
+- MedHop data and derived data: CC BY-SA 3.0
+- Microsoft GraphRAG: MIT License
+- Qwen3 model weights: Apache License 2.0
+- EmbeddingGemma: Google Gemma Terms of Use
+- Lemonade runtime: Apache License 2.0
+- Original diagrams and teaching materials: CC BY 4.0 unless otherwise stated
+
+MedHop data, model weights, and GraphRAG-generated artifacts are not
+distributed with this repository. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)
+and [data/README.md](data/README.md) for attribution and usage details.
