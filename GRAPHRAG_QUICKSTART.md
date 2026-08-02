@@ -26,7 +26,16 @@ pip install -r requirements.txt
 $env:GRAPHRAG_API_KEY="local"
 ```
 
-## 4. 建立 GraphRAG Index
+## 4. 下載並準備 MedHop input
+
+MedHop 資料和衍生 input 不隨 repository 散布。請先執行：
+
+```powershell
+python scripts/download_medhop.py
+python scripts/prepare_medhop.py
+```
+
+## 5. 建立 GraphRAG Index
 
 ```powershell
 graphrag index --root graphrag_npu_0722
@@ -40,7 +49,7 @@ graphrag index --root graphrag_npu_0722
 - `graphrag_npu_0722/output/community_reports.parquet`
 - `graphrag_npu_0722/output/lancedb/`
 
-## 5. 查詢 GraphRAG
+## 6. 查詢 GraphRAG
 
 Local search 適合具體問題：
 
@@ -54,7 +63,7 @@ Global search 適合總結整體資料：
 graphrag query --root graphrag_npu_0722 --method global "Summarize the major biomedical relationship patterns."
 ```
 
-## 6. 啟動 Streamlit
+## 7. 啟動 Streamlit
 
 ```powershell
 python -m streamlit run app.py
