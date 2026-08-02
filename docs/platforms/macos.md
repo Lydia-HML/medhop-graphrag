@@ -6,6 +6,20 @@ users must provide an OpenAI-compatible chat and embedding endpoint and update
 the model names and `api_base` values in `graphrag_npu_0722/settings.yaml` to
 match it.
 
+## Reference environment
+
+The macOS instructions have been prepared with the following reference system:
+
+| Component | Value |
+| --- | --- |
+| Computer | MacBook Pro 14-inch (November 2023) |
+| Chip | Apple M3 Max |
+| Memory | 64 GB |
+| Operating system | macOS Sequoia 15.6 |
+
+Other Apple silicon Macs can use the same Python and GraphRAG workflow.
+Performance and the available local model runtimes will vary by hardware.
+
 Update these fields while keeping the remaining GraphRAG settings unchanged:
 
 ```yaml
