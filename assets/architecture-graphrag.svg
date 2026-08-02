@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="560" viewBox="0 0 1900 560" role="img" aria-labelledby="title desc">
+  <title id="title">MedHop GraphRAG architecture</title>
+  <desc id="desc">MedHop documents are preprocessed, chunked, extracted into a biomedical graph, clustered with Leiden community detection, summarized into community reports, embedded with Embed-Gemma, stored in LanceDB and GraphML, then queried with GraphRAG.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1f2937"/>
+    </marker>
+    <filter id="shadow" x="-10%" y="-15%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#1f2937" flood-opacity="0.12"/>
+    </filter>
+    <linearGradient id="blue" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#eff8ff"/>
+      <stop offset="100%" stop-color="#dff0ff"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f1fbf4"/>
+      <stop offset="100%" stop-color="#e0f6e8"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#fff9e7"/>
+      <stop offset="100%" stop-color="#fff1c7"/>
+    </linearGradient>
+    <linearGradient id="purple" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f7f2ff"/>
+      <stop offset="100%" stop-color="#eadfff"/>
+    </linearGradient>
+    <linearGradient id="pink" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#fff2f7"/>
+      <stop offset="100%" stop-color="#ffe2ed"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1900" height="560" fill="#ffffff"/>
+  <text x="950" y="58" text-anchor="middle" font-family="Arial, 'Microsoft JhengHei', sans-serif" font-size="34" font-weight="700" fill="#111827">MedHop GraphRAG 架構流程</text>
+  <text x="950" y="96" text-anchor="middle" font-family="Arial, 'Microsoft JhengHei', sans-serif" font-size="20" fill="#4b5563">Indexing 建立圖譜與向量索引，Query 階段再組合圖譜、社群摘要與文字脈絡回答問題</text>
+
+  <g font-family="Arial, 'Microsoft JhengHei', sans-serif">
+    <g transform="translate(40 170)" filter="url(#shadow)">
+      <rect width="170" height="210" rx="18" fill="url(#blue)" stroke="#2b8edb" stroke-width="3"/>
+      <circle cx="85" cy="73" r="38" fill="#d9ecff" stroke="#1268a8" stroke-width="3"/>
+      <path d="M52 73h66M85 40v66" stroke="#1268a8" stroke-width="12" stroke-linecap="round"/>
+      <text x="85" y="155" text-anchor="middle" font-size="30" font-weight="700" fill="#0f376b">MedHop</text>
+      <text x="85" y="187" text-anchor="middle" font-size="15" fill="#31506d">PubMed 摘要</text>
+    </g>
+
+    <g transform="translate(250 170)" filter="url(#shadow)">
+      <rect width="190" height="210" rx="18" fill="url(#green)" stroke="#3d9d55" stroke-width="3"/>
+      <rect x="52" y="42" width="86" height="92" rx="8" fill="#ffffff" stroke="#137333" stroke-width="5"/>
+      <path d="M69 72h45M69 95h60M69 118h38" stroke="#3d9d55" stroke-width="6" stroke-linecap="round"/>
+      <circle cx="136" cy="130" r="22" fill="#46a758"/>
+      <text x="95" y="165" text-anchor="middle" font-size="27" font-weight="700" fill="#0f6b2d">文字前處理</text>
+      <text x="95" y="193" text-anchor="middle" font-size="15" fill="#315f3e">input/*.txt</text>
+    </g>
+
+    <g transform="translate(480 170)" filter="url(#shadow)">
+      <rect width="170" height="210" rx="18" fill="url(#gold)" stroke="#d59a00" stroke-width="3"/>
+      <rect x="42" y="58" width="36" height="92" rx="4" fill="#fffef7" stroke="#9a6b00" stroke-width="4"/>
+      <rect x="84" y="70" width="36" height="82" rx="4" fill="#fffef7" stroke="#9a6b00" stroke-width="4"/>
+      <rect x="126" y="58" width="30" height="92" rx="4" fill="#fffef7" stroke="#9a6b00" stroke-width="4"/>
+      <path d="M144 150l20 18M164 150l-20 18" stroke="#9a6b00" stroke-width="5" stroke-linecap="round"/>
+      <text x="85" y="165" text-anchor="middle" font-size="31" font-weight="700" fill="#6f4d00">Chunk</text>
+      <text x="85" y="193" text-anchor="middle" font-size="15" fill="#6f4d00">text units</text>
+    </g>
+
+    <g transform="translate(690 170)" filter="url(#shadow)">
+      <rect width="210" height="210" rx="18" fill="url(#purple)" stroke="#7c4dd8" stroke-width="3"/>
+      <path d="M104 40l54 32-30 20 30 28-54 32-54-32 30-28-30-20z" fill="#7c4dd8" opacity="0.9"/>
+      <text x="105" y="150" text-anchor="middle" font-size="30" font-weight="700" fill="#4c2cb0">Qwen3</text>
+      <text x="105" y="182" text-anchor="middle" font-size="23" font-weight="700" fill="#4c2cb0">生醫圖譜抽取</text>
+    </g>
+
+    <g transform="translate(940 170)" filter="url(#shadow)">
+      <rect width="210" height="210" rx="18" fill="#eef8ff" stroke="#2b8edb" stroke-width="3"/>
+      <circle cx="68" cy="74" r="20" fill="#e1f0ff" stroke="#1268a8" stroke-width="5"/>
+      <circle cx="143" cy="70" r="20" fill="#e1f0ff" stroke="#1268a8" stroke-width="5"/>
+      <circle cx="105" cy="130" r="22" fill="#e1f0ff" stroke="#1268a8" stroke-width="5"/>
+      <path d="M85 80l42-6M79 91l21 24M133 88l-18 28" stroke="#1268a8" stroke-width="5"/>
+      <text x="105" y="164" text-anchor="middle" font-size="25" font-weight="700" fill="#0f376b">Leiden</text>
+      <text x="105" y="192" text-anchor="middle" font-size="23" font-weight="700" fill="#0f376b">社群偵測</text>
+    </g>
+
+    <g transform="translate(1190 170)" filter="url(#shadow)">
+      <rect width="190" height="210" rx="18" fill="url(#blue)" stroke="#2b8edb" stroke-width="3"/>
+      <rect x="48" y="42" width="94" height="108" rx="8" fill="#ffffff" stroke="#143d6b" stroke-width="4"/>
+      <path d="M68 124v-28M90 124v-50M112 124v-72" stroke="#2b8edb" stroke-width="7"/>
+      <circle cx="123" cy="122" r="18" fill="#dff0ff" stroke="#143d6b" stroke-width="4"/>
+      <text x="95" y="169" text-anchor="middle" font-size="25" font-weight="700" fill="#143d6b">Community</text>
+      <text x="95" y="197" text-anchor="middle" font-size="25" font-weight="700" fill="#143d6b">Reports</text>
+    </g>
+
+    <g transform="translate(1420 170)" filter="url(#shadow)">
+      <rect width="200" height="210" rx="18" fill="url(#pink)" stroke="#d45b86" stroke-width="3"/>
+      <circle cx="63" cy="72" r="18" fill="#ffd8e7" stroke="#86184a" stroke-width="4"/>
+      <circle cx="105" cy="105" r="21" fill="#ffd8e7" stroke="#86184a" stroke-width="4"/>
+      <circle cx="145" cy="78" r="18" fill="#ffd8e7" stroke="#86184a" stroke-width="4"/>
+      <circle cx="153" cy="126" r="16" fill="#ffd8e7" stroke="#86184a" stroke-width="4"/>
+      <path d="M79 84l26 21M122 94l21-16M124 112l27 12" stroke="#86184a" stroke-width="4"/>
+      <text x="100" y="164" text-anchor="middle" font-size="25" font-weight="700" fill="#86184a">Embed-Gemma</text>
+      <text x="100" y="193" text-anchor="middle" font-size="23" font-weight="700" fill="#86184a">向量化</text>
+    </g>
+
+    <g transform="translate(1660 170)" filter="url(#shadow)">
+      <rect width="200" height="210" rx="18" fill="url(#green)" stroke="#4b9b62" stroke-width="3"/>
+      <ellipse cx="70" cy="72" rx="33" ry="13" fill="#dff4e6" stroke="#137333" stroke-width="4"/>
+      <path d="M37 72v56c0 8 66 8 66 0V72" fill="none" stroke="#137333" stroke-width="4"/>
+      <path d="M122 70l50 60M172 70l-50 60M122 70h50M122 130h50" stroke="#137333" stroke-width="5" stroke-linecap="round"/>
+      <text x="100" y="165" text-anchor="middle" font-size="23" font-weight="700" fill="#0f6b2d">LanceDB</text>
+      <text x="100" y="193" text-anchor="middle" font-size="23" font-weight="700" fill="#0f6b2d">GraphML</text>
+    </g>
+
+    <g transform="translate(1660 430)">
+      <rect width="200" height="44" rx="22" fill="#f3f8ff" stroke="#2b8edb" stroke-width="2"/>
+      <text x="100" y="29" text-anchor="middle" font-size="17" font-weight="700" fill="#143d6b">GraphRAG Query</text>
+    </g>
+  </g>
+
+  <g stroke="#1f2937" stroke-width="5" marker-end="url(#arrow)">
+    <path d="M210 275h34"/>
+    <path d="M440 275h34"/>
+    <path d="M650 275h34"/>
+    <path d="M900 275h34"/>
+    <path d="M1150 275h34"/>
+    <path d="M1380 275h34"/>
+    <path d="M1620 275h34"/>
+    <path d="M1760 380v42"/>
+  </g>
+
+  <text x="530" y="452" text-anchor="middle" font-family="Arial, 'Microsoft JhengHei', sans-serif" font-size="18" fill="#4b5563">Indexing: 建立 text units、entities、relationships、communities、reports、embeddings</text>
+  <text x="1520" y="510" text-anchor="middle" font-family="Arial, 'Microsoft JhengHei', sans-serif" font-size="18" fill="#4b5563">Query: 依 local / global / drift / basic 方法取回圖譜與文字脈絡</text>
+</svg>
