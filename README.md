@@ -24,11 +24,21 @@ MedHop text
 
 ### 1. 進入專案
 
+**Windows PowerShell**
+
 ```powershell
 cd "C:\Users\labpc\OneDrive\文件\Medhop\medhop-graphrag"
 ```
 
+**macOS (zsh/bash)**
+
+```bash
+cd /path/to/medhop-graphrag
+```
+
 ### 2. 建立環境並安裝套件
+
+**Windows PowerShell**
 
 ```powershell
 python -m venv .venv
@@ -36,12 +46,28 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
+**macOS (zsh/bash)**
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
 ### 3. 設定 API key
 
 本機 Lemonade / NPU API 如果不檢查 key，可以先使用佔位值：
 
+**Windows PowerShell**
+
 ```powershell
 $env:GRAPHRAG_API_KEY="local"
+```
+
+**macOS (zsh/bash)**
+
+```bash
+export GRAPHRAG_API_KEY="local"
 ```
 
 ### 4. 確認本機模型 API
@@ -54,13 +80,15 @@ Chat model: qwen3-it-4b-FLM
 Embedding model: embed-gemma-300m-FLM
 ```
 
-請先確認 Lemonade 或相容的本機 OpenAI API server 已啟動，且模型名稱與設定檔一致。
+請先確認 Lemonade 或相容的 OpenAI API server 已啟動，且模型名稱與設定檔一致。
+Windows 的 AMD NPU/Lemonade 設定與 macOS 的替代 endpoint 請分別參考
+[Windows 指南](docs/platforms/windows.md) 與 [macOS 指南](docs/platforms/macos.md)。
 
 ### 5. 下載並準備 MedHop 資料
 
 MedHop 及其衍生的 GraphRAG input 不隨本 repository 散布。請先自行下載資料集，再準備本機 input：
 
-```powershell
+```text
 python scripts/download_medhop.py
 python scripts/prepare_medhop.py
 ```
@@ -70,7 +98,7 @@ python scripts/prepare_medhop.py
 
 ### 6. 建立 GraphRAG index
 
-```powershell
+```text
 graphrag index --root graphrag_npu_0722
 ```
 
@@ -82,13 +110,13 @@ graphrag_npu_0722/output/
 
 ### 7. 使用 CLI 查詢
 
-```powershell
+```text
 graphrag query --root graphrag_npu_0722 --method local "What genes are related to the disease evidence in this dataset?"
 ```
 
 ### 8. 啟動 Streamlit 介面
 
-```powershell
+```text
 python -m streamlit run app.py
 ```
 
@@ -260,14 +288,14 @@ graphrag index --root graphrag_npu_0722
 
 | 項目 | 建議 |
 |---|---|
-| OS | Windows 11 |
+| OS | Windows 11 或 macOS |
 | Python | 3.10 或 3.11 |
 | GraphRAG CLI | `graphrag` |
 | Local API | Lemonade / NPU OpenAI-compatible API |
 | Completion model | `qwen3-it-4b-FLM` |
 | Embedding model | `embed-gemma-300m-FLM` |
 | Memory | 至少 16 GB RAM，較大資料建議 32 GB 以上。 |
-| Accelerator | 支援本機 LLM 推論的 AMD NPU / GPU 或其他相容加速環境。 |
+| Accelerator | Windows 可使用 AMD NPU / GPU；macOS 使用相容的本機或遠端 OpenAI-compatible endpoint。 |
 
 ## License
 

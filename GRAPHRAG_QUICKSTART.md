@@ -12,9 +12,19 @@
 
 ## 2. 安裝套件
 
+**Windows PowerShell**
+
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+```
+
+**macOS (zsh/bash)**
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
@@ -22,22 +32,30 @@ pip install -r requirements.txt
 
 本機 API 若不檢查 key，可使用佔位值：
 
+**Windows PowerShell**
+
 ```powershell
 $env:GRAPHRAG_API_KEY="local"
+```
+
+**macOS (zsh/bash)**
+
+```bash
+export GRAPHRAG_API_KEY="local"
 ```
 
 ## 4. 下載並準備 MedHop input
 
 MedHop 資料和衍生 input 不隨 repository 散布。請先執行：
 
-```powershell
+```text
 python scripts/download_medhop.py
 python scripts/prepare_medhop.py
 ```
 
 ## 5. 建立 GraphRAG Index
 
-```powershell
+```text
 graphrag index --root graphrag_npu_0722
 ```
 
@@ -53,20 +71,23 @@ graphrag index --root graphrag_npu_0722
 
 Local search 適合具體問題：
 
-```powershell
+```text
 graphrag query --root graphrag_npu_0722 --method local "Which biomedical entities are connected?"
 ```
 
 Global search 適合總結整體資料：
 
-```powershell
+```text
 graphrag query --root graphrag_npu_0722 --method global "Summarize the major biomedical relationship patterns."
 ```
 
 ## 7. 啟動 Streamlit
 
-```powershell
+```text
 python -m streamlit run app.py
 ```
 
 Streamlit app 會呼叫 `graphrag_npu_0722`，不是傳統向量 RAG。
+
+Windows 的 Lemonade / AMD NPU 設定與 macOS endpoint 設定請參考
+[`docs/platforms/`](docs/platforms/)。
