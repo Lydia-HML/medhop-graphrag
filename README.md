@@ -18,6 +18,8 @@
 依下列步驟完成第一次 indexing。資料量、模型與硬體會影響所需時間。
 
 ### 1. 下載專案
+- 教學簡報(Mac OS v1.0)：[Mac OS v1 MedHop GraphRAG](https://gamma.app/docs/Mac-OS-MedHop-GraphRAG--ck9fdgg1feyy6u1))
+- Demo 影片：[YouTube Demo](https://youtu.be/n04f6Txv7yU)
 
 ```text
 git clone https://github.com/Lydia-HML/medhop-graphrag.git
