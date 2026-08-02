@@ -1,0 +1,9 @@
+certifi
+datasets
+graphrag==3.0.9
+jupyter
+neo4j
+openai
+pandas
+python-dotenv
+tiktoken

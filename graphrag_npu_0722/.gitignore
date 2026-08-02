@@ -1,0 +1,47 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.env.txt
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Generated GraphRAG artifacts
+cache*/
+output*/
+logs*/
+artifacts/
+
+# Model weights are downloaded and managed by the user
+models/*
+!models/.gitkeep
+*.safetensors
+*.onnx
+*.gguf
+*.ckpt
+*.pth
+*.pt
+*.bin
+*.model
+
+# Notebook and editor metadata
+.ipynb_checkpoints/
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Local evaluation and database state
+*.pid
+*.log
+*.lance
+*.parquet
