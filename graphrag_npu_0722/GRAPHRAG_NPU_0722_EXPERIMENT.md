@@ -160,7 +160,7 @@ Notebook 共 18 個儲存格，編號為 Cell 0 到 Cell 17。Markdown 儲存格
 
 ```python
 %load_ext dotenv
-%dotenv C:\Users\karen\Desktop\Medhop_npu\graphrag_npu_0722\.env
+%dotenv 專案路徑/.env
 ```
 
 **用途**：將 `.env` 中的 `GRAPHRAG_API_KEY` 放入目前 Notebook 的環境變數。
@@ -367,7 +367,7 @@ print(text[:5000])
 from pathlib import Path
 
 PROJECT_ROOT = Path(
-    r"C:\Users\karen\Desktop\Medhop_npu\graphrag_npu_0722"
+    r"專案路徑"
 )
 INPUT_DIR = PROJECT_ROOT / "input"
 INPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -456,7 +456,7 @@ print(sample_file.read_text(encoding="utf-8")[:3000])
 ### Cell 16：初始化 GraphRAG 專案的說明
 
 ```powershell
-graphrag init --root C:\Users\karen\Desktop\Medhop_npu\graphrag_npu_0722
+graphrag init --root 
 ```
 
 **用途**：建立預設 `settings.yaml`、`.env` 與 `prompts/`。
@@ -468,14 +468,13 @@ graphrag init --root C:\Users\karen\Desktop\Medhop_npu\graphrag_npu_0722
 一般命令為：
 
 ```powershell
-graphrag index --root ./graphrag_npu_0722 --verbose
+graphrag index --root  --verbose
 ```
 
 本機若有 Windows SSL 問題，建議使用專案包裝腳本：
 
 ```powershell
 conda activate graphrag
-cd C:\Users\karen\Desktop\Medhop_npu\graphrag_npu_0722
 python .\run_graphrag.py index --root . --method standard --verbose
 ```
 
@@ -618,7 +617,6 @@ Local 與 Global 的 context 上限設成 2,400 tokens，因為預設 12,000 在
 
 ```powershell
 conda activate graphrag
-cd C:\Users\karen\Desktop\Medhop_npu\graphrag_npu_0722
 python .\run_graphrag.py query --root . --method local "Which candidate interacts with DB00773?"
 ```
 
@@ -682,7 +680,6 @@ Get-Content .\output_batch10_stable\stats.json
 
 ```powershell
 conda activate graphrag
-cd C:\Users\karen\Desktop\Medhop_npu\graphrag_npu_0722
 python .\run_graphrag.py index --root . --method standard --verbose
 ```
 
